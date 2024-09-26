@@ -151,7 +151,22 @@
 
     <div id="skills-info" class="row g-4">
     </div>
-
+    <div id="upgrades-info" class="row mb-4">
+        <h4>Upgrades</h4>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>Skill Name</th>
+                    <th>Effect</th>
+                </tr>
+                </thead>
+                <tbody id="upgrades-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -251,6 +266,20 @@
                     </div>
                 `;
                 skillsInfo.innerHTML += skillCard;
+            });
+            const upgradesInfo = document.getElementById('upgrades-body');
+            data.Upgrades.forEach(upgradeGroup => {
+                Object.keys(upgradeGroup).forEach(level => {
+                    upgradeGroup[level].forEach(upgrade => {
+                        upgradesInfo.innerHTML += `
+                            <tr>
+                                <td>${level}</td>
+                                <td>${upgrade.SkillName}</td>
+                                <td>${upgrade.Effect.replace(/\\n/g, '<br>')}</td>
+                            </tr>
+                        `;
+                    });
+                });
             });
         })
         .catch(error => console.error('Error fetching JSON:', error));

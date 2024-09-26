@@ -105,6 +105,58 @@
             "Vertebrae 2": "At the start of the battle, Klukai gains 3 stacks of Competitiveness. When allies deal Corrosion damage, Klukai gains 1 stack of Competitiveness. Increases the maximum stacks of Competitiveness by 4. \n\nFor every 3 points of Contamination Gauge gained, applies 1 stack of Corrosive Infusion and reduces the cooldown of Devastating Drift by an additional turn\n\nNew effect is added for Corrosive Infusion - when the holder receives Corrosion damage from Klukai's active attacks or other enemies, the number of stacks additionally increases by 1. Reduces DEF by 1%, and increases the maximum stacks by 5"
         }
     ],
+    "Upgrades": [
+        {
+            "1": [
+                {
+                    "IconImage": null,
+                    "SkillName": "Overpowering Corrosion",
+                    "Level": 2.0,
+                    "Effect": "Increases damage dealt by 15% \u2192 30% if the enemy already has Toxic Infiltration\n\nThe effects of Toxic Infiltration triggered upon death can now be triggered even if the target hasn't been killed\n\nNew effect is added for Toxic Infiltration - at the end of the action, the caster applies Toxic Infiltration to all enemies without Toxic Infiltration within a 3 tile radius of the holder for 2 turns"
+                }
+            ],
+            "2": [
+                {
+                    "IconImage": null,
+                    "SkillName": "Pride of the Elite",
+                    "Level": 2.0,
+                    "Effect": "At the start of the battle, Klukai gains 3 stacks of Competitiveness. When allies deal Corrosion damage, Klukai gains 1 stack of Competitiveness. Increases the maximum stacks of Competitiveness by 4. \n\nFor every 3 points of Contamination Gauge gained, applies 1 stack of Corrosive Infusion and reduces the cooldown of Devastating Drift by an additional turn\n\nNew effect is added for Corrosive Infusion - when the holder receives Corrosion damage from Klukai's active attacks or other enemies, the number of stacks additionally increases by 1. Reduces DEF by 1%, and increases the maximum stacks by 5"
+                }
+            ],
+            "3": [
+                {
+                    "IconImage": null,
+                    "SkillName": "Devastating Drift",
+                    "Level": 2.0,
+                    "Effect": "For each target hit, increases damage dealt by 10%, up to a maximum of 50%. If a boss target is hit, the damage increase is increased to 50% immediately. \n\nIf 2 or more targets or if a boss target is hit, this skill can be immediately used again. Applies DEF Decrease II and Toxic Infiltration on the target before attacking for 2 turns   "
+                }
+            ],
+            "4": [
+                {
+                    "IconImage": null,
+                    "SkillName": "Precise Detonation",
+                    "Level": 2.0,
+                    "Effect": "Increases damage dealt by the first damage instance to 100% ATK. For each stack of Corrosive Infusion on the target, increases damage percentage of the additional attack by 5%. If this skill counters the enemy's weakness, it will ignore 15% of the damage reduction provided by Cover"
+                }
+            ],
+            "5": [
+                {
+                    "IconImage": null,
+                    "SkillName": "Overpowering Corrosion",
+                    "Level": 3.0,
+                    "Effect": "Increases effective range by 2 tiles, and increases damage dealt to 110% ATK. Increases the spread radius of Toxic Infiltration by 1 tile, and increases damage dealt to 80% ATK. If the target has Corrosion type debuffs, applies Toxic Infiltration before attacking for 2 turns\n\nNew effect is added for Toxic Infiltration - Increases damage taken by 30% when receiving damage from Klukai's active attacks"
+                }
+            ],
+            "6": [
+                {
+                    "IconImage": null,
+                    "SkillName": "Devastating Drift",
+                    "Level": 3.0,
+                    "Effect": "This skill ignores damage reduction from Cover\n\nIncreases width by 2 tiles and applies Fear for 2 turns\n\nAfter skill usage, triggers the effect of Corrosive Infusion and the effects of Toxic Infiltration that are triggered upon death for all enemies"
+                }
+            ]
+        }
+    ],
     "Enhancements": [
         {
             "1": [
