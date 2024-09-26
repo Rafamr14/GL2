@@ -28,12 +28,11 @@
         }
         .container {
             max-width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .row.g-4 {
             gap: 2rem;
-        }
-        .col {
-            flex: 0 0 48%;
         }
         .card {
             margin-bottom: 20px;
@@ -57,6 +56,24 @@
             #character-imageMV {
                 display: block;
             }
+            #upgrades-body {
+                display: none;
+            }
+            .upgrade-icon {
+                width: 48px;
+                height: 48px;
+            }
+            .effect-header {
+                background-color: #3a3d45;
+                color: #ffffff;
+                font-weight: bold;
+            }
+            .table-responsive {
+                overflow-x: auto;
+            }
+            table {
+                width: 100%;
+            }
         }
         @media (min-width: 769px) {
             #character-portrait {
@@ -74,8 +91,25 @@
         }
         .skill-img {
             margin-right: 0.5rem;
-            width: 30px;
-            height: 30px;
+            width: 64px;
+            height: 64px;
+        }
+        #class-image-idMV, #class-image-id {
+            width: 64px;
+            height: 64px;
+        }
+        .upgrade-icon {
+            width: 48px;
+            height: 48px;
+        }
+        table th, table td {
+            vertical-align: middle;
+            text-align: center;
+        }
+        .effect-header {
+            background-color: #3a3d45;
+            color: #ffffff;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -84,14 +118,18 @@
 <div class="container mt-5">
     <div id="character-section" class="row mb-4">
         <div class="col-6">
-            <img id="character-portrait" src="img/klukai_portrait.webp" class="character-img" alt="Character Portrait">
+            <img id="character-portrait" src="img/Klukai.webp" class="character-img" alt="Character Portrait">
         </div>
         <div class="col-6">
             <h1 id="character-name">Character Name</h1>
-            <h3 id="character-class">Class: <span id="class-name"></span></h3>
+            <h3 id="character-class">
+                Class:
+                <img id="class-image-idMV" alt="class" style="width: 64px">
+                <span id="class-name"></span>
+            </h3>
             <h4>Attributes, Skill Attributes & Weaknesses</h4>
             <div id="attributes" class="table-responsive">
-                <table class="table">
+                <table class="table w-100">
                     <thead>
                     <tr>
                         <th>Attribute</th>
@@ -112,7 +150,11 @@
             </div>
             <div class="col-8">
                 <h1 id="character-nameMV">Character Name</h1>
-                <h3>Class: <span id="class-name-mobile"></span></h3>
+                <h3>
+                    Class:
+                    <img id="class-image-id" alt="class" style="width: 64px">
+                    <span id="class-name-mobile"></span>
+                </h3>
             </div>
         </div>
         <div class="row">
@@ -137,7 +179,7 @@
     <div id="effects-info" class="row mb-4">
         <h4>Effects</h4>
         <div class="table-responsive">
-            <table class="table">
+            <table class="table w-100">
                 <thead>
                 <tr>
                     <th>Effect</th>
@@ -151,12 +193,14 @@
 
     <div id="skills-info" class="row g-4">
     </div>
+
     <div id="upgrades-info" class="row mb-4">
         <h4>Upgrades</h4>
-        <div class="table-responsive">
-            <table class="table">
+        <div class="table-responsive d-none d-md-block">
+            <table class="table w-100">
                 <thead>
                 <tr>
+                    <th>Icon</th>
                     <th>Level</th>
                     <th>Skill Name</th>
                     <th>Effect</th>
@@ -166,11 +210,30 @@
                 </tbody>
             </table>
         </div>
+        <div class="table-responsive d-block d-md-none">
+            <table class="table w-100">
+                <thead>
+                <tr>
+                    <th>Icon</th>
+                    <th>Level</th>
+                    <th>Skill Name</th>
+                </tr>
+                </thead>
+                <tbody id="upgrades-bodyMV">
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
 <script>
-    fetch('./data/klukai.json')
+    function decodeUnicode(str) {
+        return str.replace(/\\u[\dA-F]{4}/gi, function (match) {
+            return String.fromCharCode(parseInt(match.replace(/\\u/g, ''), 16));
+        });
+    }
+
+    fetch('./data/Klukai.json')
         .then(response => response.json())
         .then(data => {
             document.getElementById('character-name').textContent = data.Name;
@@ -199,6 +262,9 @@
                 <tr><td>Movement Speed</td><td>${data.Attributes.MovementSpeed}</td></tr>
             `;
 
+            document.getElementById('class-image-id').src = data.ClassImage;
+            document.getElementById('class-image-idMV').src = data.ClassImage;
+
             const effectsBody = document.getElementById('effects-body');
             const effectsSegments = data.Effects.Full.split('\n\n');
             effectsBody.innerHTML = effectsSegments.map(segment => {
@@ -226,38 +292,37 @@
                 const skillCard = `
                     <div class="col">
                         <div class="card">
-                            <div class="card-header">
-                                <img src="${skill.SkillImage}" alt="Skill Image" class="skill-img">
+                            <div class="card-header d-flex align-items-center">
+                                <img src="${skill.SkillImage || './path/to/default-skill-image.png'}" alt="Skill Image" class="skill-img">
                                 ${skill.SkillName}
                             </div>
                             <div class="card-body">
                                 <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Range</th>
-                                                    <th>Attribute 1</th>
-                                                    <th>Attribute 2</th>
-                                                    <th>Attribute 3</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>${skill.Range || '--'}</td>
-                                                    <td>${skill.Att1 || '--'}</td>
-                                                    <td>${skill.Att2 || '--'}</td>
-                                                    <td>${skill.Att3 || '--'}</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Range</th>
+                                                <th>Attribute 1</th>
+                                                <th>Attribute 2</th>
+                                                <th>Attribute 3</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>${skill.Range || '--'}</td>
+                                                <td>${skill.Att1 || '--'}</td>
+                                                <td>${skill.Att2 || '--'}</td>
+                                                <td>${skill.Att3 || '--'}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                                 <div class="row">
                                     <div class="col-4">
-                                        <img src="${skill.RangeImage}" alt="Range Image" class="img-fluid">
+                                        <img src="${skill.RangeImage || './path/to/default-range-image.png'}" alt="Range Image" class="img-fluid">
                                     </div>
                                     <div class="col-8 table-responsive">
-                                    <p>${skill.Description}</p>
-
+                                        <p>${skill.Description}</p>
                                     </div>
                                 </div>
                                 ${extraInfoHTML}
@@ -267,15 +332,41 @@
                 `;
                 skillsInfo.innerHTML += skillCard;
             });
+
             const upgradesInfo = document.getElementById('upgrades-body');
+            const upgradesInfoMV = document.getElementById('upgrades-bodyMV');
+
             data.Upgrades.forEach(upgradeGroup => {
                 Object.keys(upgradeGroup).forEach(level => {
                     upgradeGroup[level].forEach(upgrade => {
                         upgradesInfo.innerHTML += `
                             <tr>
+                                <td class="bg-dark text-center">
+                                    <img src="${upgrade.IconImage || './path/to/default-icon.png'}" alt="Icon" class="upgrade-icon">
+                                </td>
                                 <td>${level}</td>
-                                <td>${upgrade.SkillName}</td>
+                                <td><b>${upgrade.SkillName}</b></td>
                                 <td>${upgrade.Effect.replace(/\\n/g, '<br>')}</td>
+                            </tr>
+                        `;
+
+                        upgradesInfoMV.innerHTML += `
+                            <tr>
+                                <td class="bg-dark text-center">
+                                    <img src="${upgrade.IconImage || './path/to/default-icon.png'}" alt="Icon" class="upgrade-icon">
+                                </td>
+                                <td>${level}</td>
+                                <td><b>${upgrade.SkillName}</b></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="effect-header">
+                                    Effect
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    ${upgrade.Effect.replace(/\\n/g, '<br>')}
+                                </td>
                             </tr>
                         `;
                     });
