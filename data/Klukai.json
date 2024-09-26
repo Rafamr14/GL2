@@ -34,8 +34,7 @@
             "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 80% ATK to it",
             "Range": 8.0,
             "RangeImage": "./imagenes_personaje/image_37.png",
-            "Effect": "Target",
-            "Vertebrae": "Increases damage dealt by the first damage instance to 100% ATK. For each stack of Corrosive Infusion on the target, increases damage percentage of the additional attack by 5%. If this skill counters the enemy's weakness, it will ignore 15% of the damage reduction provided by Cover"
+            "Effect": "Target"
         }
     ],
     "Skill": [
