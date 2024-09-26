@@ -135,25 +135,30 @@
                             </div>
                             <div class="card-body">
                                 <p>${skill.Description}</p>
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Range</th>
-                                                <th>Attribute 1</th>
-                                                <th>Attribute 2</th>
-                                                <th>Attribute 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>${skill.Range || '--'}</td>
-                                                <td>${skill.Att1 || '--'}</td>
-                                                <td>${skill.Att2 || '--'}</td>
-                                                <td>${skill.Att3 || '--'}</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <img src="${skill.RangeImage || './path/to/default-range-image.png'}" alt="Range Image" class="img-fluid">
+                                    </div>
+                                    <div class="col-8 table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Range</th>
+                                                    <th>Att. 1</th>
+                                                    <th>Att. 2</th>
+                                                    <th>Att. 3</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>${skill.Range || '--'}</td>
+                                                    <td>${skill.Att1 || '--'}</td>
+                                                    <td>${skill.Att2 || '--'}</td>
+                                                    <td>${skill.Att3 || '--'}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
