@@ -13,7 +13,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(6, 1fr); /* 8 columnas en pantallas grandes */
+            grid-template-columns: repeat(6, 1fr);
             gap: 20px;
         }
 
@@ -29,7 +29,6 @@
             width: 200px;
         }
 
-        /* Asegura que la imagen ocupe todo el contenedor */
         .rankS img, .rankA img {
             width: 100%;
             height: 100%;
@@ -38,14 +37,13 @@
         }
 
         .rankS {
-            background-color: #cf9142; /* Color de fondo personalizado */
+            background-color: #cf9142;
         }
 
         .rankA {
-            background-color: #8c0995; /* Color de fondo personalizado */
+            background-color: #8c0995;
         }
 
-        /* Sidebar styles */
         .navbar {
             background-color: #97480b;
         }
@@ -90,27 +88,26 @@
             }
         }
 
-        /* Estilos responsivos */
         @media (max-width: 1200px) {
             .grid-container {
-                grid-template-columns: repeat(5, 1fr); /* 5 columnas en pantallas medianas */
+                grid-template-columns: repeat(5, 1fr);
             }
         }
 
         @media (max-width: 768px) {
             .grid-container {
-                grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas pequeñas */
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .rankS, .rankA {
-                height: 200px; /* Ajusta el tamaño en pantallas más pequeñas */
+                height: 200px;
                 width: 190px;
             }
         }
 
         @media (max-width: 576px) {
             .grid-container {
-                grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas extra pequeñas */
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
