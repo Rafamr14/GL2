@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Suomi/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_SuomiSSR.png",
+    "Name": "Suomi",
+    "Class": "Support",
+    "ClassImage": "../img/Suomi/image_27.png",
+    "Attributes": {
+        "HP": 2298.0,
+        "ATK": 837.0,
+        "DEF": 725.0,
+        "StabilityGauge": "10 points",
+        "MovementSpeed": "6 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Light Type Bullet",
+        "SAtt1Image": "../img/Suomi/image_28.png",
+        "SAtt2": "Ice",
+        "SAtt2Image": "../img/Suomi/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "../img/Suomi/image_29.png",
+        "Weakness2": "Corrosion",
+        "Weakness2Image": "../img/Suomi/image_31.png"
+    },
+    "Effects": {
+        "Full": "Frost Barrier: Exhausts the Frost Barrier's HP to negate damage. If the Frost Barrier is broken, inflicts Chill on the unit that broke it for 1 turn. This is considered as a Ice type buff and cannot be dispelled\n\nSolidification: Decreases Movement Speed by 1 tile; at the end of the action, if the holder has 2 layers of Solidification, it is converted into Chill, which lasts for 1 turn. Solidification can be stacked up to 2 layers. This is considered as a Ice type debuff\n\nChill: Cannot move or be displaced. This is considered as a Ice type debuff\n\nDefense Support: Increases DEF equivalent to 30% of the caster's initial DEF. This effect can be stacked up to 4 times, and cannot be dispelled\n\nDefensive Recovery I: After taking damage from an active attack, recovers HP equivalent to 10% of the holder's max HP. This is considered as a buff\n\nAvalanche: Increases the number of stacks when the holder is inflicted with other Ice type debuffs by 1. When the number of stacks reaches 5, decreases the holder's Stability Gauge by 8 fixed points. This is considered as a Ice type debuff\n\nPanic: Unable to be controlled. Automatically moves away from the unit that applied this effect. This effect is removed when the unit that applied this effect dies\n\nStun: Unable to take action\n\nTaunt: Unable to be controlled. Forced to use normal attack against the unit that applied this effect. Effect is dispelled when the unit that applied this effect dies\n\nInduce: Unable to be controlled. Forced to move towards the unit that applied this effect. Effect is dispelled when the unit that applied this effect dies\n\nParalysis: Unable to execute commands. Unable to use normal attacks or skills. This effect is considered as an Electric type debuff\n\nFrostguard Shield: Decreases damage received by 30%. Decreases the number of stacks by 1 after being attacked. This effect can be stacked up to 5 times. This is considered as a Ice type buff and cannot be dispelled\n\nFrost: Applies Solidification on enemies on this tile after the end of their action for 2 turns, and inflicts Ice weakness on the enemy standing on it after the end of their action. This tile is considered as a Ice type tile\n\nCover: Decreases damage dealt to Stability Gauge by 2 points; 1 layer is consumed for every 1 instance of damage to Stability Gauge received. Can be stacked up to a maximum of 3 layers\n\nContinuous Heal I: At the end of the action, recovers HP equivalent to 20% of the holder's max HP. This is considered as a buff\n\nDEF Increase II: Increases DEF by 30%. This is considered as a buff\n\nDEF Increase III: Increases DEF by 40%. This is considered as a buff\n\nAction Support: This is considered as a Support attack. Attacks once. Cannot be triggered by Support attacks\n\nCRIT DMG Increase I: Increases CRIT DMG by 10%. This is considered as a buff\n\nQuick Step: Increases range of Action Support by 1 tile. This effect cannot be dispelled\n\nGuardian of the Light: Increases Ice damage dealt by 15%. This effect cannot be dispelled"
+    },
+    "Basic": [
+        {
+            "SkillName": "Ice Missile\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Suomi/image_32.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Suomi/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Suomi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "../img/Suomi/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Winter's Wrath\n\n(Skill / Single Target)",
+            "SkillImage": "../img/Suomi/image_38.png",
+            "Att1": "Stability Damage: 4",
+            "Att2": "Cooldown: 1 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Suomi/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Suomi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Ice damage equivalent to 100% ATK to it. Decreases the CRIT rate of this skill by 100%, and additionally deals fixed damage equivalent to 50% DEF. For each ally within a 6 tile radius, increases damage dealt to Stability Gauge by 2 points",
+            "Range": 6.0,
+            "RangeImage": "../img/Suomi/image_41.png",
+            "Effect": "Target",
+            "Vertebrae 1": "If this skill causes the enemy to enter into Stability Break, increases fixed damage dealt to 125% DEF",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Winter's Wrath: After this skill is used, if the enemy's Stability is broken, increases Stability Gauge by 2 points",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Grace of the Snow\n\n(Skill / Buff)",
+            "SkillImage": "../img/Suomi/image_44.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 1",
+            "SkillTypeBulletImage": "../img/Suomi/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Suomi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an ally within a 6 tile radius, applies Frost Barrier for 2 turns and increase Stability Gauge by 2 points. Frost Barrier can absorb damage equivalent to 130% of Suomi's initial ATK, but cannot exceed more than 100% of the ally's HP. For each enemy within a 5 tile radius of the ally, applies 1 stack of Defense Support on the ally for 2 turns",
+            "Range": 6.0,
+            "RangeImage": "../img/Suomi/image_46.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Applies Defensive Recovery I on the ally for 2 turns. If the enemy is a large target, applies an additional layer of Defense Support",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Grace of the Snow: When this skill is used, if the ally's HP is below 80%, increases the ally's Contamination Gauge by 1 point",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Radiance of the Snowfield\n\n(Ultimate / Tile)",
+            "SkillImage": "../img/Suomi/image_52.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 5",
+            "SkillTypeBulletImage": "../img/Suomi/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Suomi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a tile within a 6 tile radius, deals fixed damage equivalent to 50% DEF to all enemy targets within a 3 tile radius, and applies 2 stacks of Avalanche\n\nIncreases Stability Gauge by 2 points for all allies, dispels 1 debuff and Taunt. Applies Frost Barrier that lasts for 3 turns and 1 stack of Frostguard Shield. Frost Barrier can absorb damage equivalent to 100% of Suomi's initial ATK, but cannot exceed more than 100% of the ally's HP\n\nAfter this skill is used, creates Frost tiles in a snowflake shaped area with a 3 tile radius around the selected tile for 3 turns",
+            "Range": 6.0,
+            "RangeImage": "../img/Suomi/image_53.png",
+            "Effect": 3.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases the number of stacks of Avalanche applied by 1\n\nRecovers HP equivalent to 30% of Suomi's max HP for all allies, increases Stability Gauge by an additional 4 points for all allies. All allies (excluding Suomi) gains an additional stack of Frostguard Shield\n\nIf any ally is at full health before HP recovery, applies 1 stack of Cover and Continuous Heal I that lasts for 3 turns to that ally",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Applies DEF Increase II for all allies for 3 turns, dispels 2 additional debuffs, and also dispels Panic, Induce and Stun\n\nIncreases HP restored to 50% of Suomi's max HP, and increases the radius of the area where Frost tiles are created by 1 tile\n\nIncreases the effect of DEF Increase II by 30%. This cannot exceed 150% of the target's max HP",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Source of Warmth\n\n(Passive / Heal / Support)",
+            "SkillImage": "../img/Suomi/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the end of the action, increases Contamination Gauge by 2 points, and recovers HP equivalent to 5% of Suomi's max HP for all allies within a 6 tile radius. If the ally's HP is below 50%, increases HP restored to 10% of Suomi's max HP\n\nWhen any ally (excluding Suomi) uses normal attack or skill, Suomi applies 1 stack of Avalanche to a random enemy within a 6 tile radius of self\n\nIf an ally dealt single target damage to an enemy within attack range, Suomi activates Action Support against the enemy first, dealing Physical damage equivalent to 80% ATK and 3 Stability Damage to it, and applies CRIT DMG Increase I on the ally for 2 turns. This effect can be triggered up to 2 times per turn. If Suomi's HP is above 80%, gains Quick Step",
+            "Range": "Self",
+            "RangeImage": "../img/Suomi/image_57.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "If the ally has Frost Barrier, applies Guardian of the Light\n\nQuick Step now increases the range of Action Support by 2 tiles",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "New effect is added for Guardian of the Light - when the holder is attacked, if Frost Barrier did not break, decreases the attacker's Stability Gauge by 1 fixed point\n\nIncreases the number of Action Support per round by 1 time, and increases Stability Gauge by 1 point for all allies within a 4 tile radius of self",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Suomi/image_52.png",
+                "SkillName": "Radiance of the Snowfield",
+                "Level": 2.0,
+                "Effect": "Increases the number of stacks of Avalanche applied by 1\n\nRecovers HP equivalent to 30% of Suomi's max HP for all allies, increases Stability Gauge by an additional 4 points for all allies. All allies (excluding Suomi) gains an additional stack of Frostguard Shield. If any ally is at full health before HP recovery, applies 1 stack of Cover and Continuous Heal I that lasts for 3 turns to that ally"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Suomi/image_56.png",
+                "SkillName": "Source of Warmth",
+                "Level": 2.0,
+                "Effect": "If the ally has Frost Barrier, applies Guardian of the Light\n\nQuick Step now increases the range of Action Support by 2 tiles"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Suomi/image_44.png",
+                "SkillName": "Grace of the Snow",
+                "Level": 2.0,
+                "Effect": "Applies Defensive Recovery I on the ally for 2 turns. If the enemy is a large target, applies an additional layer of Defense Support"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Suomi/image_38.png",
+                "SkillName": "Winter's Wrath",
+                "Level": 2.0,
+                "Effect": "If this skill causes the enemy to enter into Stability Break, increases fixed damage dealt to 125% DEF"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Suomi/image_56.png",
+                "SkillName": "Source of Warmth",
+                "Level": 3.0,
+                "Effect": "New effect is added for Guardian of the Light - when the holder is attacked, if Frost Barrier did not break, decreases the attacker's Stability Gauge by 1 fixed point\n\nIncreases the number of Action Support per round by 1 time, and increases Stability Gauge by 1 point for all allies within a 4 tile radius of self"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Suomi/image_52.png",
+                "SkillName": "Radiance of the Snowfield",
+                "Level": 3.0,
+                "Effect": "Applies DEF Increase II for all allies for 3 turns, dispels 2 additional debuffs, and also dispels Panic, Induce and Stun\n\nIncreases HP restored to 50% of Suomi's max HP, and increases the radius of the area where Frost tiles are created by 1 tile. Increases the effect of DEF Increase II by 30%. This cannot exceed 150% of the target's max HP"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Suomi/image_64.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +31\nDEF +26",
+                "MaterialsImage1": "../img/Suomi/image_12.png",
+                "MaterialsImage2": "../img/Suomi/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Suomi/image_65.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +82\nATK +5.0%",
+                "MaterialsImage1": "../img/Suomi/image_7.png",
+                "MaterialsImage2": "../img/Suomi/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Suomi/image_66.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +38\nDEF +36",
+                "MaterialsImage1": "../img/Suomi/image_8.png",
+                "MaterialsImage2": "../img/Suomi/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Suomi/image_67.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +113\nHP +5.0%",
+                "MaterialsImage1": "../img/Suomi/image_9.png",
+                "MaterialsImage2": "../img/Suomi/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Suomi/image_68.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +45\nDEF +46",
+                "MaterialsImage1": "../img/Suomi/image_13.png",
+                "MaterialsImage2": "../img/Suomi/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Suomi/image_69.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +51\nHP +148",
+                "MaterialsImage1": "../img/Suomi/image_11.png",
+                "MaterialsImage2": "../img/Suomi/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Suomi/image_70.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "Winter's Wrath: After this skill is used, if the enemy's Stability is broken, increases Stability Gauge by 2 points",
+                "MaterialsImage1": "../img/Suomi/image_20.png",
+                "MaterialsImage2": "../img/Suomi/image_20.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Suomi/image_71.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "At the start of the battle, increases Contamination Gauge by 3 points",
+                "MaterialsImage1": "../img/Suomi/image_21.png",
+                "MaterialsImage2": "../img/Suomi/image_21.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "../img/Suomi/image_72.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "Grace of the Snow: When this skill is used, if the ally's HP is below 80%, increases the ally's Contamination Gauge by 1 point",
+                "MaterialsImage1": "../img/Suomi/image_22.png",
+                "MaterialsImage2": "../img/Suomi/image_22.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "../img/Suomi/image_73.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "At the start of the turn, for each ally (excluding Suomi) whose HP is below 80%, increases Movement Speed by 1 tile",
+                "MaterialsImage1": "../img/Suomi/image_23.png",
+                "MaterialsImage2": "../img/Suomi/image_23.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "../img/Suomi/image_74.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "When Suomi is inflicted with Stun, Taunt, or Paralysis, immediately dispels the effect, and becomes immune to Stun, Taunt and Paralysis for 1 turn and applies a Frost Barrier that lasts for 3 turns. Frost Barrier can absorb damage equivalent to 60% of Suomi's initial ATK, but cannot exceed more than 100% of Suomi's max HP. This effect can be activated once per battle",
+                "MaterialsImage1": "../img/Suomi/image_24.png",
+                "MaterialsImage2": "../img/Suomi/image_24.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "../img/Suomi/image_75.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "At the end of the action, if Suomi's Stability Gauge is more than 0 points, recovers HP equivalent to 10% max HP and increases Stability Gauge by 1 point",
+                "MaterialsImage1": "../img/Suomi/image_25.png",
+                "MaterialsImage2": "../img/Suomi/image_25.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "../img/Suomi/image_76.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "DEF +5.0% / When the holder's HP is below 80%, recovers HP equivalent to 15% of the holder's max HP, and gains DEF Increase III for 2 turns. This effect can be activated once per battle",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

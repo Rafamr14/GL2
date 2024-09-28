@@ -1,5 +1,5 @@
 {
-    "CharImage": "./img/Avatar_Gacha_ClukaySSR.png",
+    "CharImage": "../img/Avatar_Gacha_ClukaySSR.png",
     "CharPortrait": "./img/Klukai.webp",
     "Name": "Klukai",
     "Class": "Sentinel",

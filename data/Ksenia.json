@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Ksenia/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_KseniaSR.png",
+    "Name": "Ksenia",
+    "Class": "Support",
+    "ClassImage": "../img/Ksenia/image_27.png",
+    "Attributes": {
+        "HP": 1842.0,
+        "ATK": 539.0,
+        "DEF": 463.0,
+        "StabilityGauge": "10 points",
+        "MovementSpeed": "6 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Light Type Bullet",
+        "SAtt1Image": "../img/Ksenia/image_28.png",
+        "SAtt2": "Burn",
+        "SAtt2Image": "../img/Ksenia/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Shotgun",
+        "Weakness1Image": "../img/Ksenia/image_29.png",
+        "Weakness2": "Burn",
+        "Weakness2Image": "../img/Ksenia/image_31.png"
+    },
+    "Effects": {
+        "Full": "Flammable Items: When receiving Burn damage, increases damage dealt to Stability Gauge by 2 points, and the attacker recovers 2 Stability points. One layer is consumed for each instance of Burn damage received. This can be stacked up to 2 layers. This is considered as a Burn type debuff\n\nOverflowing Flame: When gaining this effect and after the end of an action, this unit and all friendly units within a 1 tile radius receives fixed damage equivalent to 10% of the holder's ATK. This is considered as a Burn type debuff\n\nThermal Recovery: Before being attacked, restores HP equivalent to 30% of the caster's ATK and 2 Stability points, and randomly dispels 1 buff from the attacker. This effect can only activate once, and is considered as a Burn type buff\n\nFlame Assault II: Increases ATK by 15%. This is considered as a Burn type buff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Special Discount\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Ksenia/image_32.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Ksenia/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Ksenia/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "../img/Ksenia/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Favorable Cycle\n\n(Skill / Single Target / Debuff)",
+            "SkillImage": "../img/Ksenia/image_38.png",
+            "Att1": "Stability Damage: 4",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Ksenia/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Ksenia/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 75% ATK to it, and applies 2 layers of Flammable Items for 1 turn. If Ksenia has 2 or more Burn type buff, attacks the original enemy an additional time, dealing Burn damage equivalent to 75% ATK and 2 Stability Damage to it\n\t\t",
+            "Range": 6.0,
+            "RangeImage": "../img/Ksenia/image_40.png",
+            "Effect": "Target",
+            "Vertebrae 1": "Applies Overflowing Flame after the first attack for 1 turn",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Favorable Cycle: For each time this skill kills an enemy, increases the number of activations for Action Support",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Comprehensive Rescue\n\n(Skill / Heal / Recovers Stability / Buff)",
+            "SkillImage": "../img/Ksenia/image_44.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 2",
+            "SkillTypeBulletImage": "../img/Ksenia/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Ksenia/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a friendly target within a 6 tile radius, restores their HP equivalent to 130% ATK, restores their Stability Gauge by 2 points, and applies Thermal Recovery. If the target has full HP after recovery, applies Flame Assault II for 2 turns",
+            "Range": 6.0,
+            "RangeImage": "../img/Ksenia/image_45.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "If the target has full HP after recovery, additionally restores their Stability Gauge by 2 points\t",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Comprehensive Rescue: Buffs are also applied to Ksenia",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "The Secret of Making Money\n\n(Ultimate / Single Target / Buff)",
+            "SkillImage": "../img/Ksenia/image_50.png",
+            "Att1": "Stability Damage: 5",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Ksenia/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Ksenia/image_30.png",
+            "SkillExtraTypeBullet": "Burn",
+            "Description": "Ksenia gains Thermal Recovery and Flame Assault II for 2 turns. Selects an enemy target within a 6 tile radius and deals Burn damage equivalent to 160% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "../img/Ksenia/image_53.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "If this skill counters the enemy's weakness, increases damage dealt by 20%",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Increases CRIT by 100% against targets with Overflowing Flame",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Passion for Shopping\n\n(Passive / Support / Buff)",
+            "SkillImage": "../img/Ksenia/image_54.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "If an ally dealt single target damage to an enemy within attack range, Ksenia activates Action Support against the enemy first, dealing Physical damage equivalent to 80% ATK and 3 Stability Damage to it, and applies Flame Assault II for the ally for 2 turns. This effect can be triggered up to once per turn\n\nIf Ksenia has Thermal Recovery, increases damage dealt to Stability Gauge by 1 point. At the end of the action, for each Burn type buff, increases Contamination Gauge by 1 point",
+            "Range": "Self",
+            "RangeImage": "../img/Ksenia/image_55.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "If Ksenia has Flame Assault, increases damage dealt to Stability Gauge by 1 point",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "Action Support can be triggered up to once → twice per turn",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Ksenia/image_38.png",
+                "SkillName": "Favorable Cycle",
+                "Level": 2.0,
+                "Effect": "Applies Overflowing Flame after the first attack for 1 turn"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Ksenia/image_54.png",
+                "SkillName": "Passion for Shopping",
+                "Level": 2.0,
+                "Effect": "If Ksenia has Flame Assault, increases damage dealt to Stability Gauge by 1 point"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Ksenia/image_50.png",
+                "SkillName": "The Secret of Making Money",
+                "Level": 2.0,
+                "Effect": "If this skill counters the enemy's weakness, increases damage dealt by 20%"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Ksenia/image_54.png",
+                "SkillName": "Passion for Shopping",
+                "Level": 3.0,
+                "Effect": "Action Support can be triggered up to once → twice per turn"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Ksenia/image_44.png",
+                "SkillName": "Comprehensive Rescue",
+                "Level": 2.0,
+                "Effect": "If the target has full HP after recovery, additionally restores their Stability Gauge by 2 points\t"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Ksenia/image_50.png",
+                "SkillName": "The Secret of Making Money",
+                "Level": 3.0,
+                "Effect": "Increases CRIT by 100% against targets with Overflowing Flame"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Ksenia/image_62.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +25\nDEF +19",
+                "MaterialsImage1": "../img/Ksenia/image_12.png",
+                "MaterialsImage2": "../img/Ksenia/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Ksenia/image_63.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +78\nATK +5.0%",
+                "MaterialsImage1": "../img/Ksenia/image_7.png",
+                "MaterialsImage2": "../img/Ksenia/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Ksenia/image_64.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +31\nDEF +27",
+                "MaterialsImage1": "../img/Ksenia/image_8.png",
+                "MaterialsImage2": "../img/Ksenia/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Ksenia/image_65.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +107\nHP +5.0%",
+                "MaterialsImage1": "../img/Ksenia/image_9.png",
+                "MaterialsImage2": "../img/Ksenia/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Ksenia/image_66.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +36\nDEF +35",
+                "MaterialsImage1": "../img/Ksenia/image_13.png",
+                "MaterialsImage2": "../img/Ksenia/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Ksenia/image_67.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +41\nHP +139",
+                "MaterialsImage1": "../img/Ksenia/image_11.png",
+                "MaterialsImage2": "../img/Ksenia/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Ksenia/image_68.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "When healing allies other than self, applies 1 random buff for self and the ally",
+                "MaterialsImage1": "../img/Ksenia/image_20.png",
+                "MaterialsImage2": "../img/Ksenia/image_20.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Ksenia/image_69.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "Favorable Cycle: For each time this skill kills an enemy, increases the number of activations for Action Support by 1",
+                "MaterialsImage1": "../img/Ksenia/image_21.png",
+                "MaterialsImage2": "../img/Ksenia/image_21.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "../img/Ksenia/image_70.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "After dealing Burn damage, restores HP equivalent to 10% of damage dealt and 1 Stability point",
+                "MaterialsImage1": "../img/Ksenia/image_22.png",
+                "MaterialsImage2": "../img/Ksenia/image_22.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "../img/Ksenia/image_71.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Comprehensive Rescue: Buffs are also applied to Ksenia",
+                "MaterialsImage1": "../img/Ksenia/image_23.png",
+                "MaterialsImage2": "../img/Ksenia/image_23.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "../img/Ksenia/image_72.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "When applying Burn type buffs, dispels 1 additional debuff",
+                "MaterialsImage1": "../img/Ksenia/image_24.png",
+                "MaterialsImage2": "../img/Ksenia/image_24.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "../img/Ksenia/image_73.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "If Ksenia has Thermal Recovery at the end of the action, increases Contamination Gauge by 1 point",
+                "MaterialsImage1": "../img/Ksenia/image_25.png",
+                "MaterialsImage2": "../img/Ksenia/image_25.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "../img/Ksenia/image_74.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "HP +3.0% / When applying Burn type buffs, there is a 50% chance of applying 1 buff on the target for 1 turn",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

@@ -1,0 +1,324 @@
+{
+    "CharImage": "../img/Groza/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_GrozaSR.png",
+    "Name": "Groza",
+    "Class": "Bulwark",
+    "ClassImage": "../img/Groza/image_27.png",
+    "Attributes": {
+        "HP": 1981.0,
+        "ATK": 539.0,
+        "DEF": 553.0,
+        "StabilityGauge": "12 points",
+        "MovementSpeed": "6 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Medium Type Bullet",
+        "SAtt1Image": "../img/Groza/image_28.png",
+        "SAtt2Image": "../img/Groza/image_27.png"
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "../img/Groza/image_29.png",
+        "Weakness2": "Burn",
+        "Weakness2Image": "../img/Groza/image_30.png"
+    },
+    "Effects": {
+        "Full": "Movement Reduction II: Reduces Movement Speed by 2 tiles. This is considered as a movement type debuff\n\nCover: Decreases damage dealt to Stability Gauge by 2 points; 1 layer is consumed for every 1 instance of damage to Stability Gauge received. Can be stacked up to a maximum of 3 layers\n\nDEF Increase II: Increases DEF by 30%. This is considered as a buff\n\nATK Increase I: Increases ATK by 10%. This is considered as a buff\n\nDEF Decrease I: Decreases DEF by 20%. This is considered as a debuff\n\nATK Decrease I: Decreases ATK by 10%. This is considered as a debuff\n\nTaunt: Unable to be controlled. Forced to use normal attack against the unit that applied this effect. Effect is dispelled when the unit that applied this effect dies\n\nCounter: Attacks once. Cannot be triggered by Ambush, Counter, or Support attacks"
+    },
+    "Basic": [
+        {
+            "SkillName": "Heavy Suppression",
+            "SkillImage": "../img/Groza/image_31.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Groza/image_32.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "After friendly units (excluding self) ends their action, if they are within a 7 tile radius of Groza, increases Contamination Gauge by 1 point for Groza and applies 1 layer of Cover for Groza and the unit. For each layer of Cover possessed, increases damage dealt by 5%. \n\nIf an enemy dealt single target damage to an ally within a 6 tile radius of self, Groza activates Counter against the enemy, dealing Physical damage equivalent to 80% ATK and 4 Stability Damage to it. This effect can be triggered up to 1 time per round",
+            "Range": "Self",
+            "RangeImage": "../img/Groza/image_36.png",
+            "Effect": "If this skill causes the enemy to enter into Stability Break, increases Contamination Gauge by 1 point for self and increases Stability Gauge by 4 points"
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Heavy Suppression\n\n(Skill / Single Target / Debuff)",
+            "SkillImage": "../img/Groza/image_37.png",
+            "Att1": "Stability Damage: 5",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 1",
+            "SkillTypeBulletImage": "../img/Groza/image_32.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 7 tile radius and deals Physical damage equivalent to 130% ATK to it, and applies Movement Reduction II for 1 turn\n\t\t",
+            "Range": 7.0,
+            "RangeImage": "../img/Groza/image_39.png",
+            "Effect": "Target"
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Perfect Cover\n\n(Skill / Buff / Protection)",
+            "SkillImage": "../img/Groza/image_42.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Groza/image_32.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Applies 2 layers of Cover and DEF Increase II for all friendly units within a 6 tile radius. For every 1 friendly unit within range, increases Contamination Gauge by 1 point for self. Increases the number of times Counter can be activated by 2",
+            "Range": "Self",
+            "RangeImage": "../img/Groza/image_43.png",
+            "Effect": 6.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Explosive Bombardment\n\n(Ultimate / AoE / Debuff)",
+            "SkillImage": "../img/Groza/image_48.png",
+            "Att1": "Stability Damage: 4",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 4",
+            "SkillTypeBulletImage": "../img/Groza/image_32.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a tile within a 7 tile radius, and deals AoE Physical damage equivalent to 90% ATK to all enemy targets within a 3x3 tile range, and applies Movement Reduction II for 1 turn",
+            "Range": 7.0,
+            "RangeImage": "../img/Groza/image_49.png",
+            "Effect": "3x3",
+            "Vertebrae 3": "Deals AoE Physical damage equivalent to 90% \u2192 100% ATK",
+            "Vertebrae 5": "Duration of Movement Reduction II increases by 1 turn"
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Timely Maintenance\n\n(Passive / Buff / Counter)",
+            "SkillImage": "../img/Groza/image_51.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "After friendly units (excluding self) ends their action, if they are within a 7 tile radius of Groza, increases Contamination Gauge by 1 point for Groza and applies 1 layer of Cover for Groza and the unit. For each layer of Cover possessed, increases damage dealt by 5%. \n\nIf an enemy dealt single target damage to an ally within a 6 tile radius of self, Groza activates Counter against the enemy, dealing Physical damage equivalent to 80% ATK and 4 Stability Damage to it. This effect can be triggered up to 1 time per round",
+            "Range": "Self",
+            "RangeImage": "../img/Groza/image_52.png",
+            "Effect": 7.0,
+            "Vertebrae 4": "When Groza's action ends, applies ATK Decrease I on the enemy with the highest ATK within a 7 tile radius of self for 1 turn",
+            "Vertebrae 6": "When having Cover, decreases damage dealt to Stability Gauge by 1 point"
+        }
+    ],
+    "Upgrades":
+        {
+            "1": [
+                {
+                    "IconImage": "../img/Groza/image_37.png",
+                    "SkillName": "Heavy Suppression",
+                    "Level": 2.0,
+                    "Effect": "If this skill causes the enemy to enter into Stability Break, increases Contamination Gauge by 1 point for self and increases Stability Gauge by 4 points"
+                }
+            ],
+            "2": [
+                {
+                    "IconImage": "../img/Groza/image_42.png",
+                    "SkillName": "Perfect Cover",
+                    "Level": 2.0,
+                    "Effect": "Increases Stability Gauge by 5 points for self"
+                }
+            ],
+            "3": [
+                {
+                    "IconImage": "../img/Groza/image_48.png",
+                    "SkillName": "Explosive Bombardment",
+                    "Level": 2.0,
+                    "Effect": "Deals AoE Physical damage equivalent to 90% \u2192 100% ATK"
+                }
+            ],
+            "4": [
+                {
+                    "IconImage": "../img/Groza/image_51.png",
+                    "SkillName": "Timely Maintenance",
+                    "Level": 2.0,
+                    "Effect": "When Groza's action ends, applies ATK Decrease I on the enemy with the highest ATK within a 7 tile radius of self for 1 turn"
+                }
+            ],
+            "5": [
+                {
+                    "IconImage": "../img/Groza/image_42.png",
+                    "SkillName": "Explosive Bombardment",
+                    "Level": 3.0,
+                    "Effect": "Duration of Movement Reduction II increases by 1 turn"
+                }
+            ],
+            "6": [
+                {
+                    "IconImage": "../img/Groza/image_51.png",
+                    "SkillName": "Timely Maintenance",
+                    "Level": 3.0,
+                    "Effect": "When having Cover, decreases damage dealt to Stability Gauge by 1 point"
+                }
+            ]
+        }
+    ,
+    "Enhancements": [
+        {
+            "1": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 1",
+                    "Level": 1.0,
+                    "Effect": "ATK +25\nDEF +23",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "20\n\n\n1000"
+                }
+            ],
+            "2": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 2",
+                    "Level": 20.0,
+                    "Effect": "HP +84\nHP +5.0%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "20\n\n\n2000"
+                }
+            ],
+            "3": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 3",
+                    "Level": 25.0,
+                    "Effect": "ATK +30\nDEF +32",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "40\n\n\n4000"
+                }
+            ],
+            "4": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 4",
+                    "Level": 30.0,
+                    "Effect": "HP +115\nHP +5.0%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "80\n\n\n8000"
+                }
+            ],
+            "5": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 5",
+                    "Level": 35.0,
+                    "Effect": "ATK +35\nDEF +42",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "120\n\n\n10000"
+                }
+            ],
+            "6": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 6",
+                    "Level": 40.0,
+                    "Effect": "ATK +41\nHP +150",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "160\n\n\n12000"
+                }
+            ],
+            "7": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 1",
+                    "Level": 20.0,
+                    "Effect": "If Groza causes the enemy to enter into Stability Break, applies DEF Decrease I and ATK Decrease I on the enemy for 1 turn",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n3000"
+                }
+            ],
+            "8": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 2",
+                    "Level": 20.0,
+                    "Effect": "When activating Perfect Cover, applies ATK Increase I for 1 turn",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n3000"
+                }
+            ],
+            "9": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 3",
+                    "Level": 30.0,
+                    "Effect": "When Groza's HP is below 30%, increases healing received by 50%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n8000"
+                }
+            ],
+            "10": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 4",
+                    "Level": 30.0,
+                    "Effect": "When activating Heavy Suppression, if this skill causes the enemy to enter into Stability Break, applies Taunt on the enemy for 1 turn",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n8000"
+                }
+            ],
+            "11": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 5",
+                    "Level": 40.0,
+                    "Effect": "When Groza has Cover, decreases damage received from AoE attacks by 20%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "2\n\n\n12000"
+                }
+            ],
+            "12": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 6",
+                    "Level": 40.0,
+                    "Effect": "When Groza enters into Stability Break, she recovers 20% of max HP, increases Stability Gauge by 5 points, and dispels 4 debuffs from self. This effect can be activated once per battle",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "2\n\n\n12000"
+                }
+            ],
+            "13": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Common Key",
+                    "Level": 40.0,
+                    "Effect": "HP +3.0% / When having Cover, the user is immune to an instance of displacement. This effect has a cooldown of 1 turn",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "None"
+                }
+            ]
+        }
+    ]
+}

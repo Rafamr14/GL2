@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Dushevnaya/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_DusevnyjSSR.png",
+    "Name": "Dushevnaya",
+    "Class": "Support",
+    "ClassImage": "../img/Dushevnaya/image_27.png",
+    "Attributes": {
+        "HP": 2176.0,
+        "ATK": 943.0,
+        "DEF": 688.0,
+        "StabilityGauge": "10 points",
+        "MovementSpeed": "6 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Heavy Type Bullet",
+        "SAtt1Image": "../img/Dushevnaya/image_28.png",
+        "SAtt2": "Ice",
+        "SAtt2Image": "../img/Dushevnaya/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Light Type Bullet",
+        "Weakness1Image": "../img/Dushevnaya/image_29.png",
+        "Weakness2": "Electric",
+        "Weakness2Image": "../img/Dushevnaya/image_31.png"
+    },
+    "Effects": {
+        "Full": "Blessing of Ice: When the number of stacks of this buff reaches 4, Hero's Principles is enhanced. The skill will ignore 15% of the damage reduction from Cover, deals Ice damage, and increases damage dealt towards enemies on friendly Ice type tiles to 130%. This buff can be stacked up to 4 times, is only effective once, and cannot be dispelled\n\nFrost: Applies Solidification on enemies on this tile after the end of their action for 2 turns, and inflicts Ice weakness on the enemy standing on it after the end of their action. This tile is considered as a Ice type tile\n\nSolidification: Decreases Movement Speed by 1 tile; at the end of the action, if the holder has 2 layers of Solidification, it is converted into Chill, which lasts for 1 turn. Solidification can be stacked up to 2 layers. This is considered as a Ice type debuff\n\nChill: Cannot move or be displaced. This is considered as a Ice type debuff\n\nBlizzard's Prayer: Inflicts Solidification on the target before using an active attack, and increases damage dealt by 10%. This only takes effect once, is considered as a buff, and cannot be dispelled\n\nBlizzard's Domain: If an ally dealt single target damage to an enemy within attack range, Dushevnaya activates Action Support against the enemy afterwards, dealing Physical damage equivalent to 80% ATK and 2 Stability Damage to it. This effect can be triggered up to 2 times per turn, and cannot be dispelled\n\nAction Support: This is considered as a Support attack. Attacks once. Cannot be triggered by Support attacks\n\nMovement Increase II: Increases movement speed by 2 tiles. This is considered as a buff\n\nInsight: Increases effective range of Ultimate skill by 1 tile. This is considered as a buff\n\nVulnerability II: Increases damage received by 20%"
+    },
+    "Basic": [
+        {
+            "SkillName": "Daybreak\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Dushevnaya/image_32.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Dushevnaya/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Dushevnaya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 8.0,
+            "RangeImage": "../img/Dushevnaya/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Hero's Principles\n\n(Skill / Single Target)",
+            "SkillImage": "../img/Dushevnaya/image_38.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Dushevnaya/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Dushevnaya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 110% ATK to it. If this skill kills an enemy with Ice type debuff, Dushevnaya gains 1 stack of Blessing of Ice",
+            "Range": 8.0,
+            "RangeImage": "../img/Dushevnaya/image_40.png",
+            "Effect": "Target",
+            "Vertebrae 1": "Increases the number of stacks of Blessing of Ice gained by 1. When the number of stacks reaches 4, increases damage dealt towards enemies to 140%. If the target is on friendly Ice type tiles, increases damage dealt to 160%",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Winter God's Approval\n\n(Skill / Debuff / Tile)",
+            "SkillImage": "../img/Dushevnaya/image_44.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 3",
+            "SkillTypeBulletImage": "../img/Dushevnaya/image_28.png",
+            "SkillTypeBullet": "Ice",
+            "SkillExtraTypeBulletImage": "../img/Dushevnaya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a tile within a 6 tile radius, deals AoE Ice damage equivalent to 50% ATK to all enemies within a 2 tile radius of the specified tile, and creates Frost tiles that lasts for 2 turns\n\nEnhances the skill on the next use, which increases damage dealt from 50% to 120% ATK, and inflicts Solidification on the target for 1 turn. If the skill is enhanced, it cannot be enhanced again\n\nIf Dushevnaya's Contamination Gauge is full, this skill can be immediately used again",
+            "Range": 6.0,
+            "RangeImage": "../img/Dushevnaya/image_46.png",
+            "Effect": 2.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases effect range by 1 tile. Increases AoE Ice damage dealt to 70% ATK, and increases AoE Ice damage dealt while the skill is enhanced to 90% ATK",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Winter God's Approval: If this skill causes the enemy to enter into Stability Break, inflicts DEF Decrease II for 2 turns",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Book of Prophecy\n\n(Ultimate / Buff / Support)",
+            "SkillImage": "../img/Dushevnaya/image_49.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 3 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Dushevnaya/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Dushevnaya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Applies 1 stack of Blizzard's Prayer to all allies within a 7 tiles radius. Increases Contamination Gauge by 2 points, and gains Blizzard's Domain for 2 turns. While Dushevnaya has Blizzard's Domain, if Contamination Gauge is at 0 points at the end of the action, increases Contamination Gauge by 2 points",
+            "Range": "Self",
+            "RangeImage": "../img/Dushevnaya/image_50.png",
+            "Effect": 7.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases effect range by 2 tiles. Applies a random powerful buff and Movement Increase II for all allies within range for 2 turns. Blizzard's Prayer increases damage dealt by 20% instead",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Dispels 1 buff from 4 random enemies within range. Increases the number of stacks of Blizzard's Prayer applies by 1. While Dushevnaya has Blizzard's Domain, attacks ignore 30% of the target's DEF, and increases the number of Action Support used by 1 time",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Blessed Artwork\n\n(Passive / Buff)",
+            "SkillImage": "../img/Dushevnaya/image_54.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "Increases damage dealt for all allies by 10%, and additionally increases Ice damage dealt by 10%. At the end of the action, increases Contamination Gauge by 2 points\n\nIf Dushevnaya's HP is above 80%, decreases damage dealt to Stability Gauge by 1 point, and gains Insight. While Dushevnaya has Insight, increases attack range of all skills (excluding Ultimate) and Support attacks by 1 tile",
+            "Range": "Self",
+            "RangeImage": "../img/Dushevnaya/image_55.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "Attacks ignore 15% of the damage reduction from Cover. At the start of the action, creates Frost tiles within a 1 tile radius for 2 turns. If Dushevnaya is on friendly Ice type tiles, increases damage dealt to Stability Gauge by 1 point",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "Increases damage dealt for all allies by 20%, and additionally increases Ice damage dealt by 40% instead. Dispels 1 Defense type buff after using an active attack. If Dushevnaya is on friendly Ice type tiles, inflicts Vulnerability II on the target for 2 turns",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Dushevnaya/image_49.png",
+                "SkillName": "Book of Prophecy",
+                "Level": 2.0,
+                "Effect": "Increases effect range by 2 tiles. Applies a random powerful buff and Movement Increase II for all allies within range for 2 turns. Blizzard's Prayer increases damage dealt by 20% instead"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Dushevnaya/image_54.png",
+                "SkillName": "Blessed Artwork",
+                "Level": 2.0,
+                "Effect": "Attacks ignore 15% of the damage reduction from Cover. At the start of the action, creates Frost tiles within a 1 tile radius for 2 turns. If Dushevnaya is on friendly Ice type tiles, increases damage dealt to Stability Gauge by 1 point"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Dushevnaya/image_44.png",
+                "SkillName": "Winter God's Approval",
+                "Level": 2.0,
+                "Effect": "Increases effect range by 1 tile. Increases AoE Ice damage dealt to 70% ATK, and increases AoE Ice damage dealt while the skill is enhanced to 90% ATK"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Dushevnaya/image_38.png",
+                "SkillName": "Hero's Principles",
+                "Level": 2.0,
+                "Effect": "Increases the number of stacks of Blessing of Ice gained by 1. When the number of stacks reaches 4, increases damage dealt towards enemies to 140%. If the target is on friendly Ice type tiles, increases damage dealt to 160%"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Dushevnaya/image_49.png",
+                "SkillName": "Book of Prophecy",
+                "Level": 3.0,
+                "Effect": "Dispels 1 buff from 4 random enemies within range. Increases the number of stacks of Blizzard's Prayer applies by 1. While Dushevnaya has Blizzard's Domain, attacks ignore 30% of the target's DEF, and increases the number of Action Support used by 1 time"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Dushevnaya/image_54.png",
+                "SkillName": "Blessed Artwork",
+                "Level": 3.0,
+                "Effect": "Increases damage dealt for all allies by 20%, and additionally increases Ice damage dealt by 40% instead. Dispels 1 Defense type buff after using an active attack. If Dushevnaya is on friendly Ice type tiles, inflicts Vulnerability II on the target for 2 turns"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Dushevnaya/image_67.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +58\nHP +140",
+                "MaterialsImage1": "../img/Dushevnaya/image_11.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Dushevnaya/image_68.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "For each excess stack of Blessing of Ice, increases CRIT rate of Hero's Principles by 5%, up to 30%",
+                "MaterialsImage1": "../img/Dushevnaya/image_20.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_20.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Dushevnaya/image_69.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "If an active attack only hit 1 target, increases Ice damage dealt by 20% and damage dealt to Stability Gauge by 2 points",
+                "MaterialsImage1": "../img/Dushevnaya/image_21.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_21.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Dushevnaya/image_70.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "When an active skill creates Ice type tiles, if the area already has Ice type tiles, triggers Tile Reaction and removes the effect of the tile and dispels 1 buff from the enemy. For each tile removed, Dushevnaya gains 1 stack of Blessing of Ice, up to 3 stacks",
+                "MaterialsImage1": "../img/Dushevnaya/image_22.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_22.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Dushevnaya/image_71.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Winter God's Approval: If this skill causes the enemy to enter into Stability Break, inflicts DEF Decrease II for 2 turns",
+                "MaterialsImage1": "../img/Dushevnaya/image_23.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_23.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Dushevnaya/image_72.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "If Dushevnaya has Blizzard's Domain, she is immune to movement displacement effects",
+                "MaterialsImage1": "../img/Dushevnaya/image_24.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_24.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Dushevnaya/image_73.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "At the start of the action, if Dushevnaya is on friendly Ice tiles, dispels 2 debuffs from self",
+                "MaterialsImage1": "../img/Dushevnaya/image_25.png",
+                "MaterialsImage2": "../img/Dushevnaya/image_25.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Dushevnaya/image_74.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "ATK +5.0% / Increases elemental damage dealt by 10% towards enemies who are unable to move, or whose movement speed is smaller or equal to self",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "10": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "11": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "12": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "13": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ]
+    }
+}

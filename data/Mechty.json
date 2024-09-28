@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Mechty/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_MishtySSR.png",
+    "Name": "Mechty",
+    "Class": "Support",
+    "ClassImage": "../img/Mechty/image_27.png",
+    "Attributes": {
+        "HP": 2206.0,
+        "ATK": 901.0,
+        "DEF": 678.0,
+        "StabilityGauge": "10 points",
+        "MovementSpeed": "6 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Medium Type Bullet",
+        "SAtt1Image": "../img/Mechty/image_28.png",
+        "SAtt2": "Corrosion",
+        "SAtt2Image": "../img/Mechty/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "../img/Mechty/image_29.png",
+        "Weakness2": "Turbid",
+        "Weakness2Image": "../img/Mechty/image_31.png"
+    },
+    "Effects": {
+        "Full": "Recovery Mode: Decreases damage received by 30% and Stability damage received by 2 points. This cannot be dispelled\n\nFrenzy Mode: Increases ATK and DEF by 30%. At the end of the action, increases Contamination Gauge by 2 points. This cannot be dispelled\n\nMovement Increase II: Increases movement speed by 2 tiles. This is considered as a buff\n\nToxic: Applies Corrosion weakness on the enemy standing on it. Deals fixed damage equivalent to 50% of the caster's ATK and applies Stability Imbalance I that lasts for 2 turns on the enemy standing on it at the end of the action. This tile is considered as a Corrosion type tile\n\nStability Imbalance I: Increases damage dealt to Stability by 1 points. This is considered as a debuff\n\nDream Guardian: Increases damage dealt by AoE support attacks by 30%. This is considered as a buff and cannot be dispelled\n\nNightmare Shield: Before being attacked, decreases the attacker's ATK by 5%, and dispels 1 random debuff from self. If the attacker countered the holder's weakness, decreases damage received by 30%. This effect can only activate once, and is considered as a Corrosion type buff\n\nSleep Aid Kit: Increases damage dealt by 10%. This can be stacked up to 2 times, is considered as a buff and cannot be dispelled\n\nToxic Shroud: Increases Corrosive damage received by 25%. This is considered as a Corrosion type debuff\n\nNightmare: Increases AoE damage by 10%, increases AoE support damage by 50%, and changes the damage type of AoE support damage to Corrosive damage. This is considered as a Corrosion buff and cannot be dispelled\n\nConcentrated Acid II: Decreases DEF by 20%. This effect is considered as a Corrosion type debuff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Bedtime Warmup\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Mechty/image_32.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Mechty/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Mechty/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 80% ATK to it\n\nWhen in Frenzy Mode, deals Corrosive damage, and increases damage dealt to Stability by 2 points",
+            "Range": 8.0,
+            "RangeImage": "../img/Mechty/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": "Bedtime Warmup: After activation, gains 1 random buff for 1 turn",
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": "Bedtime Warmup: Before activation, dispels 2 buffs from the target",
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Dreamquake\n\n(Skill / AoE / Tile)",
+            "SkillImage": "../img/Mechty/image_38.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Mechty/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Mechty/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals AoE Corrosive damage equivalent to 130% ATK to it and all enemies within a 1 tile radius of the target\n\nWhen in Frenzy Mode, gains Movement Increase II for 1 turn, and generates Toxic tiles within the skill's range that lasts for 2 turns",
+            "Range": 8.0,
+            "RangeImage": "../img/Mechty/image_39.png",
+            "Effect": 1.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "Increases Stability damage dealt by 2 points\n\nWhen in Frenzy Mode, increases damage dealt by the next basic attack by 100%, and deals fixed damage equivalent to 50% ATK to all enemies within range",
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": "Dreamquake: Before attacking, inflicts Concentrated Acid II on large targets for 2 turns",
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Dreamless Night\n\n(Skill / Buff / Stability Recovery)",
+            "SkillImage": "../img/Mechty/image_45.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 3",
+            "SkillTypeBulletImage": "../img/Mechty/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Mechty/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Recovers 6 Stability, cleanses all debuffs from self, and applies Dream Guardian to all allies within a 8 tiles radius for 2 turns\n\nWhen in Frenzy Mode, Dreamquake or Bedtime Warmup can be used after this skill, and gains 1 layer of Sleep Aid Kit for 2 turns",
+            "Range": "Self",
+            "RangeImage": "../img/Mechty/image_46.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases the maximum stacks of Sleep Aid Kit by 1. Restores HP equivalent to 30% max HP for self. Restores HP equivalent to 15% of Mechty's max HP and recovers 3 Stability to the lowest HP ally\n\nWhen in Frenzy Mode, increases the number of Sleep Aid Kit stacks gained by 1",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Dreamless Night: Generates Toxic tiles in a 2 tile radius around the nearest enemy that lasts for 2 turns",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Dream Wonderland\n\n(Ultimate / Buff)",
+            "SkillImage": "../img/Mechty/image_50.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 4 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Mechty/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Mechty/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Removes Recovery Mode and activates Frenzy Mode for 3 turns. When Frenzy Mode ends, returns back to Recovery Mode\n\nApplies Nightmare Shield to all allies, and applies Toxic Shroud on the nearest enemy for 1 turn",
+            "Range": "Self",
+            "RangeImage": "../img/Mechty/image_51.png",
+            "Effect": "Entire Map",
+            "Vertebrae 1": "Recovery Mode will not be removed when entering into Frenzy Mode\n\nNightmare Shield decreases the attacker's ATK by 10% and increases the number of debuffs cleansed by 1 instead\n\nNew effect is added for Frenzy Mode - increases CRIT rate of basic attacks by 30%",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": "New effect is added for Frenzy Mode - increases movement speed by 2 tiles, at the end of the action, applies Nightmare Shield to allies without Nightmare Shield, and increases Contamination Gauge by 3 points instead",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Waking Dream\n\n(Passive / Buff)",
+            "SkillImage": "../img/Mechty/image_54.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the start of the battle, Mechty enters into Recovery Mode, and applies Nightmare for all allies",
+            "Range": "Self",
+            "RangeImage": "../img/Mechty/image_55.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": "New effect is added for Recovery Mode  - increases damage dealt by basic attacks by 50%. At the start of the turn, cleanses 2 debuffs from self",
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": "New effect is added for Recovery Mode - Increases Corrosive damage dealt by allies by 25%, increases CRIT DMG dealt by basic attacks by 80%\n\nNew effect is added for Nightmare - Increases AoE support damage by 80% instead, increases Stability damage dealt by 1 point, and increases AoE damage dealt by 20% instead",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Mechty/image_50.png",
+                "SkillName": "Dream Wonderland",
+                "Level": 2.0,
+                "Effect": "Recovery Mode will not be removed when entering into Frenzy Mode\n\nNightmare Shield decreases the attacker's ATK by 10% and increases the number of debuffs cleansed by 1 instead\n\nNew effect is added for Frenzy Mode - increases CRIT rate of basic attacks by 30%"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Mechty/image_54.png",
+                "SkillName": "Waking Dream",
+                "Level": 2.0,
+                "Effect": "New effect is added for Recovery Mode  - increases damage dealt by basic attacks by 50%. At the start of the turn, cleanses 2 debuffs from self"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Mechty/image_45.png",
+                "SkillName": "Dreamless Night",
+                "Level": 2.0,
+                "Effect": "Increases the maximum stacks of Sleep Aid Kit by 1. Restores HP equivalent to 30% max HP for self. Restores HP equivalent to 15% of Mechty's max HP and recovers 3 Stability to the lowest HP ally\n\nWhen in Frenzy Mode, increases the number of Sleep Aid Kit stacks gained by 1"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Mechty/image_38.png",
+                "SkillName": "Dreamquake",
+                "Level": 2.0,
+                "Effect": "Increases Stability damage dealt by 2 points\n\nWhen in Frenzy Mode, increases damage dealt by the next basic attack by 100%, and deals fixed damage equivalent to 50% ATK to all enemies within range"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Mechty/image_50.png",
+                "SkillName": "Dream Wonderland",
+                "Level": 3.0,
+                "Effect": "New effect is added for Frenzy Mode - increases movement speed by 2 tiles, at the end of the action, applies Nightmare Shield to allies without Nightmare Shield, and increases Contamination Gauge by 3 points instead"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Mechty/image_54.png",
+                "SkillName": "Waking Dream",
+                "Level": 3.0,
+                "Effect": "New effect is added for Recovery Mode - Increases Corrosive damage dealt by allies by 25%, increases CRIT DMG dealt by basic attacks by 80%\n\nNew effect is added for Nightmare - Increases AoE support damage by 80% instead, increases Stability damage dealt by 1 point, and increases AoE damage dealt by 20% instead"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": null,
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": null,
+                "MaterialsImage1": "../img/Mechty/image_12.png",
+                "MaterialsImage2": "../img/Mechty/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": null,
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": null,
+                "MaterialsImage1": "../img/Mechty/image_7.png",
+                "MaterialsImage2": "../img/Mechty/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Mechty/image_56.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": null,
+                "MaterialsImage1": "../img/Mechty/image_8.png",
+                "MaterialsImage2": "../img/Mechty/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Mechty/image_57.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": null,
+                "MaterialsImage1": "../img/Mechty/image_9.png",
+                "MaterialsImage2": "../img/Mechty/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Mechty/image_58.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": null,
+                "MaterialsImage1": "../img/Mechty/image_13.png",
+                "MaterialsImage2": "../img/Mechty/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Mechty/image_59.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": null,
+                "MaterialsImage1": "../img/Mechty/image_11.png",
+                "MaterialsImage2": "../img/Mechty/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Mechty/image_60.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "Bedtime Warmup: After activation, gains 1 random buff for 1 turn",
+                "MaterialsImage1": "../img/Mechty/image_20.png",
+                "MaterialsImage2": "../img/Mechty/image_20.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Mechty/image_61.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "If Mechty countered the enemy's weakness, applies Toxic Shroud on the target after attacking",
+                "MaterialsImage1": "../img/Mechty/image_21.png",
+                "MaterialsImage2": "../img/Mechty/image_21.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": null,
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "Dreamquake: Before attacking, inflicts Concentrated Acid II on large targets for 2 turns",
+                "MaterialsImage1": "../img/Mechty/image_22.png",
+                "MaterialsImage2": "../img/Mechty/image_22.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": null,
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Dreamless Night: Generates Toxic tiles in a 2 tile radius around the nearest enemy that lasts for 2 turns",
+                "MaterialsImage1": "../img/Mechty/image_23.png",
+                "MaterialsImage2": "../img/Mechty/image_23.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "../img/Mechty/image_62.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "Bedtime Warmup: Before activation, dispels 2 buffs from the target",
+                "MaterialsImage1": "../img/Mechty/image_24.png",
+                "MaterialsImage2": "../img/Mechty/image_24.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "../img/Mechty/image_63.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "If Mechty has 2 or more buffs, decreases damage received from single target attacks by 20%",
+                "MaterialsImage1": "../img/Mechty/image_25.png",
+                "MaterialsImage2": "../img/Mechty/image_25.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "../img/Mechty/image_64.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "ATK +5.0% / Increases damage dealt by basic attacks by 20%",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

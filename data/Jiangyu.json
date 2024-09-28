@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Jiangyu/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_JiangyuSSR.png",
+    "Name": "Jiangyu",
+    "Class": "Sentinel",
+    "ClassImage": "../img/Jiangyu/image_27.png",
+    "Attributes": {
+        "HP": 1932.0,
+        "ATK": 802.0,
+        "DEF": 519.0,
+        "StabilityGauge": "9 points",
+        "MovementSpeed": "5 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Medium Type Bullet",
+        "SAtt1Image": "../img/Jiangyu/image_28.png",
+        "SAtt2": "Electric",
+        "SAtt2Image": "../img/Jiangyu/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "../img/Jiangyu/image_29.png",
+        "Weakness2": "Turbid",
+        "Weakness2Image": "../img/Jiangyu/image_31.png"
+    },
+    "Effects": {
+        "Full": "Voltage: Inflicts Electric weakness on the enemy standing on it. When the enemy standing on the tile takes AoE damage, triggers Tile Reaction and removes the effect of the tile, dealing fixed damage equivalent to 30% ATK. If the AoE damage is Electric or Turbid, increases damage dealt to 60% ATK. Damage is doubled against large targets. This tile is considered as an Electric type tile\n\nConductance: When the holder receives damage, this effect is converted to Paralysis. This effect is considered as an Electric type debuff\n\nParalysis: Unable to execute commands. Unable to use normal attacks or skills. This effect is considered as an Electric type debuff\n\nCyclotron Potential: Before using a single target active attack, applies Conductance for 1 turn. This effect cannot be dispelled\n\nPreemptive Strike: When enemies within a 8 tile radius attempt to use an active attack, decreases Contamination Gauge by 3 points, and activates Ambush, dealing Electric damage equivalent to 80% ATK and 2 Stability damage to the target. There is a 50% chance of inflicting Electric before attacking for 1 turn. This effect is considered as a buff, and cannot be dispelled\n\nChill: Cannot move or be displaced. This is considered as a Ice type debuff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Form Intention Fist\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Jiangyu/image_32.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Jiangyu/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Jiangyu/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 8.0,
+            "RangeImage": "../img/Jiangyu/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Thunderclap\n\n(Skill / Single Target)",
+            "SkillImage": "../img/Jiangyu/image_38.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 1 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Jiangyu/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Jiangyu/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Electric damage equivalent to 130% ATK to it. If the target has Electric type debuffs, increases damage dealt by 10%, and increases Contamination Gauge by 2 points. If this skill kills the target, deals fixed damage to all enemies within a 2 tile radius of the enemy, and generates a Voltage terrain for 2 turns",
+            "Range": 8.0,
+            "RangeImage": "../img/Jiangyu/image_41.png",
+            "Effect": "Target",
+            "Vertebrae 1": "If this skill counters the enemy's weakness, increases Contamination Gauge by an additional 2 points, and reduces the cooldown of this skill by 1 turn",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Thunderclap: If this skill counters the weakness of a target with Electric type debuffs, deals fixed damage equivalent to 30% ATK to all enemies within a 2 tile radius of the target and generates a Voltage terrain for 2 turns",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Precise Strike\n\n(Skill / Single Target / Dispel)",
+            "SkillImage": "../img/Jiangyu/image_45.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 3 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Jiangyu/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Jiangyu/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 140% ATK to it. Before attacking, dispels 2 buffs from the target and enhances her skill: For each buff successfully dispelled, increases damage dealt by this attack by 10%, and increases Contamination Gauge by 2 points. If the target has Electric type debuffs, this skill will automatically gain the maximum enhancement effect",
+            "Range": 8.0,
+            "RangeImage": "../img/Jiangyu/image_46.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "For each buff successfully dispelled, reduces the cooldown of this skill by 1 turn",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Chain Lightning\n\n(Ultimate / AoE / Buff)",
+            "SkillImage": "../img/Jiangyu/image_51.png",
+            "Att1": "Stability Damage: 4",
+            "Att2": "Cooldown: 4 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Jiangyu/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Jiangyu/image_30.png",
+            "SkillExtraTypeBullet": "Electric",
+            "Description": "Selects a direction and deals AoE Electric damage equivalent to 110% ATK to all enemies within 8 tiles along the direction. Triggers Tile Reaction, dealing fixed damage equivalent to 30% ATK and inflicting Paralysis to all enemies within a 2 tile radius or standing on Turbid type tiles for 1 turn, and removes the effect of the tile\n\nAfter attacking, gains Cyclotron Potential for 2 turns",
+            "Range": 1.0,
+            "RangeImage": "../img/Jiangyu/image_54.png",
+            "Effect": 8.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": "When Jiangyu's active attacks kills the target or counters the weakness of a target with Electric type debuffs, refreshes the duration of Cyclotron Potential",
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Deals fixed damage equivalent to 30% ATK and inflicts Chill to all enemies within a 2 tile radius or standing on Ice type tiles for 1 turn. If Tile Reaction is triggered, increases Contamination Gauge by 5 points",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": "Chain Lightning: This skill destroys all destructible cover within skill range, except for a 3x3 range of self. After attacking, knocks back the first enemy hit by 1 tile",
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Burst of Energy\n\n(Passive / Ambush)",
+            "SkillImage": "../img/Jiangyu/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "Before using an active attack on the target, if the target has Electric type debuffs, increases damage dealt by 10%. At the start of the battle and at the end of her turn, if Jiangyu has maximum Contamination Gauge, gains Preemptive Strike for 1 turn",
+            "Range": "Self",
+            "RangeImage": "../img/Jiangyu/image_57.png",
+            "Effect": "Target",
+            "Vertebrae 1": "Ambush deals damage equivalent to 80% → 100% ATK and has a 50% → 100% chance of inflicting Conductance before attacking",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": "Before using an active attack on the target, if the target has Electric type debuffs, increases damage dealt by 10% → 20%. Decreases Contamination Gauge cost required to activate Preemptive Strike by 1 point",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Jiangyu/image_56.png",
+                "SkillName": "Burst of Energy",
+                "Level": 2.0,
+                "Effect": "Ambush deals damage equivalent to 80% → 100% ATK and has a 50% → 100% chance of inflicting Conductance before attacking"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Jiangyu/image_51.png",
+                "SkillName": "Chain Lightning",
+                "Level": 2.0,
+                "Effect": "When Jiangyu's active attacks kills the target or counters the weakness of a target with Electric type debuffs, refreshes the duration of Cyclotron Potential"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Jiangyu/image_38.png",
+                "SkillName": "Thunderclap",
+                "Level": 2.0,
+                "Effect": "If this skill counters the enemy's weakness, increases Contamination Gauge by an additional 2 points, and reduces the cooldown of this skill by 1 turn"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Jiangyu/image_45.png",
+                "SkillName": "Precise Strike",
+                "Level": 2.0,
+                "Effect": "For each buff successfully dispelled, reduces the cooldown of this skill by 1 turn"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Jiangyu/image_51.png",
+                "SkillName": "Chain Lightning",
+                "Level": 3.0,
+                "Effect": "Deals fixed damage equivalent to 30% ATK and inflicts Chill to all enemies within a 2 tile radius or standing on Ice type tiles for 1 turn. If Tile Reaction is triggered, increases Contamination Gauge by 5 points"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Jiangyu/image_56.png",
+                "SkillName": "Burst of Energy",
+                "Level": 3.0,
+                "Effect": "Before using an active attack on the target, if the target has Electric type debuffs, increases damage dealt by 10% → 20%. Decreases Contamination Gauge cost required to activate Preemptive Strike by 1 point"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Jiangyu/image_64.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +37\nDEF +22",
+                "MaterialsImage1": "../img/Jiangyu/image_12.png",
+                "MaterialsImage2": "../img/Jiangyu/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Jiangyu/image_65.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +81\nATK +5.0%",
+                "MaterialsImage1": "../img/Jiangyu/image_7.png",
+                "MaterialsImage2": "../img/Jiangyu/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Jiangyu/image_66.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +45\nDEF +30",
+                "MaterialsImage1": "../img/Jiangyu/image_8.png",
+                "MaterialsImage2": "../img/Jiangyu/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Jiangyu/image_67.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +112\nATK +5.0%",
+                "MaterialsImage1": "../img/Jiangyu/image_9.png",
+                "MaterialsImage2": "../img/Jiangyu/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Jiangyu/image_68.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +53\nDEF +39",
+                "MaterialsImage1": "../img/Jiangyu/image_13.png",
+                "MaterialsImage2": "../img/Jiangyu/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Jiangyu/image_69.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +61\nHP +146",
+                "MaterialsImage1": "../img/Jiangyu/image_11.png",
+                "MaterialsImage2": "../img/Jiangyu/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Jiangyu/image_70.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "At the start of the battle, increases Contamination Gauge by 3 points",
+                "MaterialsImage1": "../img/Jiangyu/image_20.png",
+                "MaterialsImage2": "../img/Jiangyu/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Jiangyu/image_71.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "Thunderclap: If this skill counters the weakness of a target with Electric type debuffs, deals fixed damage equivalent to 30% ATK to all enemies within a 2 tile radius of the target and generates a Voltage terrain for 2 turns",
+                "MaterialsImage1": "../img/Jiangyu/image_21.png",
+                "MaterialsImage2": "../img/Jiangyu/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "../img/Jiangyu/image_72.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "When an enemy with Electric type debuffs is killed, increases Contamination Gauge by 1 point",
+                "MaterialsImage1": "../img/Jiangyu/image_22.png",
+                "MaterialsImage2": "../img/Jiangyu/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "../img/Jiangyu/image_73.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "If the target has Electric type debuffs but is immune to control effects, ignores 15% DEF, and applies Conductance after attacking for 1 turn",
+                "MaterialsImage1": "../img/Jiangyu/image_23.png",
+                "MaterialsImage2": "../img/Jiangyu/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "../img/Jiangyu/image_74.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "Chain Lightning: This skill destroys all destructible cover within skill range, except for a 3x3 range of self. After attacking, knocks back the first enemy hit by 1 tile",
+                "MaterialsImage1": "../img/Jiangyu/image_24.png",
+                "MaterialsImage2": "../img/Jiangyu/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "../img/Jiangyu/image_75.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "If Jiangyu is standing on an Electric type tile, clears the effects of the tile, and increases Contamination Gauge by 1 point",
+                "MaterialsImage1": "../img/Jiangyu/image_25.png",
+                "MaterialsImage2": "../img/Jiangyu/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "../img/Jiangyu/image_76.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "ATK +5.0% / When the user's Stability Gauge is more than 0 points, increases elemental damage dealt by 5%. The user is immune to Electric type debuffs and the negative effects of Electric type tiles",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

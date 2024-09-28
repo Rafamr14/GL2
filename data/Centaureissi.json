@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Centaureissi/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_CentaureissiSSR.png",
+    "Name": "Centaureissi",
+    "Class": "Support",
+    "ClassImage": "../img/Centaureissi/image_27.png",
+    "Attributes": {
+        "HP": 1893.0,
+        "ATK": 696.0,
+        "DEF": 585.0,
+        "StabilityGauge": "10 points",
+        "MovementSpeed": "6 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Medium Type Bullet",
+        "SAtt1Image": "../img/Centaureissi/image_28.png",
+        "SAtt2": "Burn",
+        "SAtt2Image": "../img/Centaureissi/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "../img/Centaureissi/image_29.png",
+        "Weakness2": "Turbid",
+        "Weakness2Image": "../img/Centaureissi/image_31.png"
+    },
+    "Effects": {
+        "Full": "Thermal Recovery: Before being attacked, restores HP equivalent to 30% of the caster's ATK and 2 Stability points, and randomly dispels 1 buff from the attacker. This effect can only activate once, and is considered as a Burn type buff\n\nOverflowing Flame: When gaining this effect and after the end of an action, this unit and all friendly units within a 1 tile radius receives fixed damage equivalent to 10% of the holder's ATK. This is considered as a Burn type debuff\n\nPanic: Unable to be controlled. Automatically moves away from the unit that applied this effect. This effect is removed when the unit that applied this effect dies\n\nStun: Unable to take action\n\nTaunt: Unable to be controlled. Forced to use normal attack against the unit that applied this effect. Effect is dispelled when the unit that applied this effect dies\n\nInduce: Unable to be controlled. Forced to move towards the unit that applied this effect. Effect is dispelled when the unit that applied this effect dies\n\nAction Support: This is considered as a Support attack. Attacks once. Cannot be triggered by Support attacks\n\nFlame Assault II: Increases ATK by 15%. This is considered as a Burn type buff\n\nDamage Increase II: Increases damage dealt by 20%. This is considered as a buff\n\nThermal Cycle: When Thermal Recovery is consumed, gains 1 layer of Thermal Recovery. Can be activated once. This is considered as a Burn type buff and cannot be dispelled"
+    },
+    "Basic": [
+        {
+            "SkillName": "Cleaning Time\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Centaureissi/image_32.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Centaureissi/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Centaureissi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 7 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 7.0,
+            "RangeImage": "../img/Centaureissi/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Careful Hospitality\n\n(Skill / Single Target / Heal / Buff)",
+            "SkillImage": "../img/Centaureissi/image_38.png",
+            "Att1": "Stability Damage: 6",
+            "Att2": "Cooldown: 1 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Centaureissi/image_28.png",
+            "SkillTypeBullet": "Burn",
+            "SkillExtraTypeBulletImage": "../img/Centaureissi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 7 tile radius, and deals Burn damage equivalent to 130% ATK to it. After attacking, restores HP equivalent to 100% ATK to the nearest allied unit (excluding self), and gains Thermal Recovery for self. If the enemy target has Overflowing Flame, heals an additional ally (excluding self)",
+            "Range": 7.0,
+            "RangeImage": "../img/Centaureissi/image_40.png",
+            "Effect": "Target",
+            "Vertebrae 1": "If Centaureissi has Thermal Recovery, gains Thermal Cycle",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Zucchero's Special Drink\n\n(Skill / AoE / Heal / Dispel)",
+            "SkillImage": "../img/Centaureissi/image_44.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Centaureissi/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Centaureissi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Select an ally within a 7 tile radius, and restores HP equivalent to 150% ATK to the ally and all allies within a 3 tiles radius, with the healing amount being evenly distributed among all targets. Additionally, deals AoE Physical Damage equivalent to 50% ATK to all enemies within range. If the enemy target has Overflowing Flame, dispels 2 buffs from the target",
+            "Range": 7.0,
+            "RangeImage": "../img/Centaureissi/image_45.png",
+            "Effect": 3.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Restores HP equivalent to 75% ATK to each ally at minimum",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Zucchero's Special Drink: Restores HP equivalent to 150% → 225% ATK",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Afternoon Tea Break\n\n(Ultimate / Heal / Stability Recovery / Dispel / Buff)",
+            "SkillImage": "../img/Centaureissi/image_49.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 6",
+            "SkillTypeBulletImage": "../img/Centaureissi/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Centaureissi/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Restores HP equivalent to 100% ATK to all allies, cleanses 2 debuffs, dispels Panic and Stun, and restores 7 Stability to the ally with the lowest Stability. After healing, applies Thermal Recovery",
+            "Range": "Entire Map",
+            "RangeImage": "../img/Centaureissi/image_50.png",
+            "Effect": "Entire Map",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Cleanses 2 → 3 debuffs, dispels Panic, Stun, Taunt, and Induce",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Restores 7 → 8 Stability to 1 → 2 ally with the lowest Stability",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Maid's Duty\n\n(Passive / Buff / Debuff / Support)",
+            "SkillImage": "../img/Centaureissi/image_51.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the start of the battle, gains Thermal Recovery\n\nWhen Centaureissi has Thermal Recovery, increases damage dealt by 20%, additionally restores HP equivalent to 10% max HP when healing and applies Overflowing Flame on active attack for 2 turns\n\nIf an ally dealt single target damage to an enemy within attack range, Centaureissi activates Action Support against the enemy first, dealing Physical damage equivalent to 80% ATK and 3 Stability Damage to it, applies Thermal Recovery for the ally, and increases Contamination Gauge by 1 point. This effect can be triggered up to 2 times per turn",
+            "Range": "Self",
+            "RangeImage": "../img/Centaureissi/image_52.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "When Action Support is activated, applies Flame Assault II and Damage Increase II on the ally for 1 turn",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "When Centaureissi has Thermal Recovery, increases damage dealt by 20% → 40% and increases healing efficacy by 20%. If the healed ally has Thermal Recovery, increases healing efficacy by 50% instead, if the enemy target has Overflowing Flame, increases damage dealt by 50% instead",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Centaureissi/image_51.png",
+                "SkillName": "Maid's Duty",
+                "Level": 2.0,
+                "Effect": "When Action Support is activated, applies Flame Assault II and Damage Increase II on the ally for 1 turn"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Centaureissi/image_51.png",
+                "SkillName": "Maid's Duty",
+                "Level": 3.0,
+                "Effect": "When Centaureissi has Thermal Recovery, increases damage dealt by 20% → 40% and increases healing efficacy by 20%. If the healed ally has Thermal Recovery, increases healing efficacy by 50% instead, if the enemy target has Overflowing Flame, increases damage dealt by 50% instead"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Centaureissi/image_38.png",
+                "SkillName": "Careful Hospitality",
+                "Level": 2.0,
+                "Effect": "If Centaureissi has Thermal Recovery, gains Thermal Cycle"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Centaureissi/image_49.png",
+                "SkillName": "Afternoon Tea Break",
+                "Level": 2.0,
+                "Effect": "Cleanses 2 → 3 debuffs, dispels Panic, Stun, Taunt, and Induce"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Centaureissi/image_44.png",
+                "SkillName": "Zucchero's Special Drink",
+                "Level": 2.0,
+                "Effect": "Restores HP equivalent to 75% ATK to each ally at minimum"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Centaureissi/image_49.png",
+                "SkillName": "Afternoon Tea Break",
+                "Level": 3.0,
+                "Effect": "Restores 7 → 8 Stability to 1 → 2 ally with the lowest Stability"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Centaureissi/image_64.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +53\nHP +143",
+                "MaterialsImage1": "../img/Centaureissi/image_11.png",
+                "MaterialsImage2": "../img/Centaureissi/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Centaureissi/image_65.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "At the start of the battle, increases Contamination Gauge by 3 points",
+                "MaterialsImage1": "../img/Centaureissi/image_20.png",
+                "MaterialsImage2": "../img/Centaureissi/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Centaureissi/image_66.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "If an ally within a 7 tile radius enters into Stability Break after being attacked, consumes Thermal Recovery from self and applies Thermal Recovery on the ally",
+                "MaterialsImage1": "../img/Centaureissi/image_21.png",
+                "MaterialsImage2": "../img/Centaureissi/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Centaureissi/image_67.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "When Thermal Recovery is triggered, dispels 1 random buff from the attacker. Before triggering Thermal Recovery, cleanses 2 debuffs from self",
+                "MaterialsImage1": "../img/Centaureissi/image_22.png",
+                "MaterialsImage2": "../img/Centaureissi/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Centaureissi/image_68.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Zucchero's Special Drink: Restores HP equivalent to 150% → 225% ATK",
+                "MaterialsImage1": "../img/Centaureissi/image_23.png",
+                "MaterialsImage2": "../img/Centaureissi/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Centaureissi/image_69.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "When healing allies, cleanses 1 debuff from the target. Cleanses an additional debuff from healing targets with Thermal Recovery",
+                "MaterialsImage1": "../img/Centaureissi/image_24.png",
+                "MaterialsImage2": "../img/Centaureissi/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Centaureissi/image_70.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "When healing allies, if the target has Thermal Recovery, applies a random powerful buff for 1 turn",
+                "MaterialsImage1": "../img/Centaureissi/image_25.png",
+                "MaterialsImage2": "../img/Centaureissi/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Centaureissi/image_71.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "HP +5.0% / At the end of the action, applies Thermal Recovery to the nearest ally without Thermal Recovery. This has a cooldown of 2 turns",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "10": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "11": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "12": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "13": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Macchiato/image_26.png",
+    "CharPortrait": "../img/Avatar_Whole_MacqiatoSSR.png",
+    "Name": "Macchiato",
+    "Class": "Sentinel",
+    "ClassImage": "../img/Macchiato/image_27.png",
+    "Attributes": {
+        "HP": 2138.0,
+        "ATK": 1051.0,
+        "DEF": 592.0,
+        "StabilityGauge": "9 points",
+        "MovementSpeed": "4 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Heavy Type Bullet",
+        "SAtt1Image": "../img/Macchiato/image_28.png",
+        "SAtt2": "Ice",
+        "SAtt2Image": "../img/Macchiato/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Light Type Bullet",
+        "Weakness1Image": "../img/Macchiato/image_29.png",
+        "Weakness2": "Burn",
+        "Weakness2Image": "../img/Macchiato/image_31.png"
+    },
+    "Effects": {
+        "Full": "Winning Belief: Increases ATK by 10%. This effect can be stacked up to 3 times. 1 stack is consumed for each command used other than using Cold Precision Shot. This effect cannot be dispelled\n\nConventional Strategy: Decreases AoE damage received by 25%, 1 layer is consumed for each instance of AoE damage received. This effect can be stacked up to 3 layers, and is considered as a buff\n\nEmergency Strategy: Decreases AoE damage received by 25% x the number of current layers, 1 layer is consumed for each instance of AoE damage received. This effect can be stacked up to 3 layers, and is considered as a buff\n\nLone Wolf: Before using an active attack, inflicts Solidification on the target. The number of layers inflicted is equivalent to the instances of damage dealt by the attack. This effect lasts for 1 turn, only takes effect once, is considered as a buff and cannot be dispelled\n\nSolidification: Decreases Movement Speed by 1 tile; at the end of the action, if the holder has 2 layers of Solidification, it is converted into Chill, which lasts for 1 turn. Solidification can be stacked up to 2 layers. This is considered as a Ice type debuff\n\nChill: Cannot move or be displaced. This is considered as a Ice type debuff\n\nFrost Barrier: Exhausts the Frost Barrier's HP to negate damage. If the Frost Barrier is broken, inflicts Chill on the unit that broke it for 1 turn. This is considered as a Ice type buff and cannot be dispelled\n\nOverwatch: If Frost Barrier is active, when enemies uses an active attack against allies within attack range, activates Ambush and deals Ice damage equivalent to 90% ATK and 2 Stability damage, and inflicts Solidification for 1 turn. This effect can be triggered twice per turn and cannot be dispelled\n\nAmbush: Attacks once. Cannot be triggered by Counter or Support attacks\n\nFocused Attention: Increases damage dealt by 7.5%. This effect can be stacked up to 4 times, and cannot be dispelled\n\nInsight: Increases effective range of Ultimate skill by 1 tile. This is considered as a buff\n\nSteady Movement: Increases movement speed by 1 tile. The holder is immune to enemy's displacement effects. This effect cannot be dispelled\n\nExtra Movement: Can move once, but is unable to execute any commands\n\nCold Blooded Instinct: Immune to Solidification and Chill. When Macchiato deals Ice damage towards the holder, deals 20% more damage. If Macchiato counters the weakness of the holder, deals 30% more damage instead. This effect cannot be dispelled"
+    },
+    "Basic": [
+        {
+            "SkillName": "Lone Wolf Territory\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Macchiato/image_32.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Macchiato/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Macchiato/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 9.0,
+            "RangeImage": "../img/Macchiato/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Cold Precision Shot\n\n(Skill / Single Target)",
+            "SkillImage": "../img/Macchiato/image_38.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 2",
+            "SkillTypeBulletImage": "../img/Macchiato/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Macchiato/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius and deals Ice damage equivalent to 160% ATK to it. Increases CRIT DMG of this attack by 30%. For each damage instance dealt, gains 1 stack of Winning Belief",
+            "Range": 9.0,
+            "RangeImage": "../img/Macchiato/image_41.png",
+            "Effect": "Target",
+            "Vertebrae 1": "This skill will no longer increase CRIT DMG, but deals two instances of damage equivalent to 100% ATK. If the first damage instance CRITs, increases the CRIT rate and CRIT DMG of the second damage instance by 100% and 80% respectively",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Cold Precision Shot: If this skill kills the enemy, increase Contamination Gauge by 1 point",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Professional Tactics\n\n(Skill / Single Target / Buff)",
+            "SkillImage": "../img/Macchiato/image_45.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 3 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Macchiato/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Macchiato/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius and deals Physical damage equivalent to 130% ATK to it, increases Contamination Gauge by 4 points and gains 2 layers of Conventional Strategy",
+            "Range": 9.0,
+            "RangeImage": "../img/Macchiato/image_47.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Gains 2 layers of Emergency Strategy instead",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Professional Tactics: After skill activation, if there are no allies within a 3 tiles radius of self, gains 1 layer of Lone Wolf",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Absolute Mental Defence\n\n(Ultimate / Buff / Counter / Debuff)",
+            "SkillImage": "../img/Macchiato/image_52.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 3 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Macchiato/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "../img/Macchiato/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Gains Frost Barier and Overwatch for 2 turns. Frost Barrier can absorb damage equivalent to 65% ATK, but cannot exceed more than 60% max HP",
+            "Range": 9.0,
+            "RangeImage": "../img/Macchiato/image_53.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Frost Barrier can absorb damage equivalent to 65% → 80% ATK, but cannot exceed more than 60% → 80% max HP. Overwatch can be triggered 2 → 3 times per turn",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "After activating Absolute Mental Defence, at the end of each action, increases Contamination Gauge by 2 points. This effect can be activated twice\n\nOverwatch can be triggered 3 → 4 times per turn. If Overwatch CRITs, gains Focused Attention for 1 turn",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Battlefield Insight\n\n(Passive / Buff)",
+            "SkillImage": "../img/Macchiato/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "Increases CRIT by 40% and decresaes CRIT DMG by 10%\n\nAt the start of the turn, if HP is above 80%, gains Insight and Steady Movement until the start of the next round. When attacking enemies with Solidification, attacks ignore 4 Stability and increases damage dealt by 20%; when attacking enemies with Chill, attacks ignore 6 Stability and increases damage dealt by 30%; these two effects cannot be stacked",
+            "Range": "Self",
+            "RangeImage": "../img/Macchiato/image_57.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "When dealing Ice damage to enemies with Solidification, attacks ignore 4 → 6 Stability; when dealing Ice damage to enemies with Chill, attacks ignore 6 → 10 Stability",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "When dealing Ice damage to enemies with Solidification or Chill, attacks ignore 10 Stability and increases damage dealt by 30%",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Macchiato/image_38.png",
+                "SkillName": "Cold Precision Shot",
+                "Level": 2.0,
+                "Effect": "This skill will no longer increase CRIT DMG, but deals two instances of damage equivalent to 100% ATK. If the first damage instance CRITs, increases the CRIT rate and CRIT DMG of the second damage instance by 100% and 80% respectively"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Macchiato/image_52.png",
+                "SkillName": "Absolute Mental Defence",
+                "Level": 2.0,
+                "Effect": "Frost Barrier can absorb damage equivalent to 65% → 80% ATK, but cannot exceed more than 60% → 80% max HP. Overwatch can be triggered 2 → 3 times per turn"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Macchiato/image_56.png",
+                "SkillName": "Battlefield Insight",
+                "Level": 2.0,
+                "Effect": "When dealing Ice damage to enemies with Solidification, attacks ignore 4 → 6 Stability; when dealing Ice damage to enemies with Chill, attacks ignore 6 → 10 Stability"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Macchiato/image_45.png",
+                "SkillName": "Professional Tactics",
+                "Level": 2.0,
+                "Effect": "Gains 2 layers of Emergency Strategy"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Macchiato/image_56.png",
+                "SkillName": "Battlefield Insight",
+                "Level": 3.0,
+                "Effect": "When dealing Ice damage to enemies with Solidification or Chill, attacks ignore 10 Stability and increases damage dealt by 30%"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Macchiato/image_52.png",
+                "SkillName": "Absolute Mental Defence",
+                "Level": 3.0,
+                "Effect": "After activating Absolute Mental Defence, at the end of each action, increases Contamination Gauge by 2 points. This effect can be activated twice\n\nOverwatch can be triggered 3 → 4 times per turn. If Overwatch CRITs, gains Focused Attention for 1 turn"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Macchiato/image_64.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +29\nDEF +21",
+                "MaterialsImage1": "../img/Macchiato/image_12.png",
+                "MaterialsImage2": "../img/Macchiato/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Macchiato/image_65.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +77\nATK +5.0%",
+                "MaterialsImage1": "../img/Macchiato/image_7.png",
+                "MaterialsImage2": "../img/Macchiato/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Macchiato/image_66.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +48\nDEF +29",
+                "MaterialsImage1": "../img/Macchiato/image_8.png",
+                "MaterialsImage2": "../img/Macchiato/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Macchiato/image_67.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +105\nATK +5.0%",
+                "MaterialsImage1": "../img/Macchiato/image_9.png",
+                "MaterialsImage2": "../img/Macchiato/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Macchiato/image_68.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +56\nDEF +38",
+                "MaterialsImage1": "../img/Macchiato/image_13.png",
+                "MaterialsImage2": "../img/Macchiato/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Macchiato/image_69.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +64\nHP +137",
+                "MaterialsImage1": "../img/Macchiato/image_11.png",
+                "MaterialsImage2": "../img/Macchiato/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Macchiato/image_70.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "Cold Precision Shot: If this skill kills the enemy, increases Contamination Gauge by 2 points",
+                "MaterialsImage1": "../img/Macchiato/image_20.png",
+                "MaterialsImage2": "../img/Macchiato/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Macchiato/image_71.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "At the start of the battle, increases Contamination Gauge by 3 points",
+                "MaterialsImage1": "../img/Macchiato/image_21.png",
+                "MaterialsImage2": "../img/Macchiato/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "../img/Macchiato/image_72.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "Professional Tactics: After skill activation, if there are no allies within a 3 tiles radius of self, gains 1 layer of Lone Wolf",
+                "MaterialsImage1": "../img/Macchiato/image_22.png",
+                "MaterialsImage2": "../img/Macchiato/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "../img/Macchiato/image_73.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "If Lone Wolf Territory, Cold Precision Shot, or Professional Tactics is used while being on a Ice type tile, cleanses all Ice type debuffs for self and gains 3 tiles of Extra Movement",
+                "MaterialsImage1": "../img/Macchiato/image_23.png",
+                "MaterialsImage2": "../img/Macchiato/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "../img/Macchiato/image_74.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "At the start of the battle, inflicts Cold Blooded Instinct on the enemy with the highest HP",
+                "MaterialsImage1": "../img/Macchiato/image_24.png",
+                "MaterialsImage2": "../img/Macchiato/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "../img/Macchiato/image_75.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "At the start of the battle, increases ATK by 10%, lasts till HP drops below 100% for the first time",
+                "MaterialsImage1": "../img/Macchiato/image_25.png",
+                "MaterialsImage2": "../img/Macchiato/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "../img/Macchiato/image_76.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "ATK +5.0% / At the start of the user's action, if the user's HP is above 80%, decreases Stability damage by 2 points when being attacked. This effect can be activated once per turn",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

@@ -1,0 +1,365 @@
+{
+    "CharImage": "../img/Lenna/image_27.png",
+    "CharPortrait": "../img/Avatar_Whole_LennaSSR.png",
+    "Name": "Lenna",
+    "Class": "Support",
+    "ClassImage": "../img/Lenna/image_28.png",
+    "Attributes": {
+        "HP": 2081.0,
+        "ATK": 689.0,
+        "DEF": 550.0,
+        "StabilityGauge": "10 points",
+        "MovementSpeed": "7 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Light Type Bullet",
+        "SAtt1Image": "../img/Lenna/image_29.png",
+        "SAtt2": "Electric",
+        "SAtt2Image": "../img/Lenna/image_31.png"
+    },
+    "Weakness": {
+        "Weakness1": "Medium Type Bullet",
+        "Weakness1Image": "../img/Lenna/image_30.png",
+        "Weakness2": "Ice",
+        "Weakness2Image": "../img/Lenna/image_32.png"
+    },
+    "Effects": {
+        "Full": "Stability Imbalance II: Increases damage dealt to Stability by 2 points. This effect is considered as a debuff\n\nExtra Command: Can execute any action except for movement\n\nConductance: When the holder receives damage, this effect is converted to Paralysis. This effect is considered as an Electric type debuff\n\nParalysis: Unable to execute commands. Unable to use normal attacks or skills. This effect is considered as an Electric type debuff\n\nVoltage: Inflicts Electric weakness on the enemy standing on it. When the enemy standing on the tile takes AoE damage, triggers Tile Reaction and removes the effect of the tile, dealing fixed damage equivalent to 30% ATK. If the AoE damage is Electric or Turbid, increases damage dealt to 60% ATK. Damage is doubled against large targets. This tile is considered as an Electric type tile\n\nArc: When an enemy within a 5 tile radius takes damage from active attacks, applies Electric for 1 turn. This effect cannot be dispelled\n\nConcealment: If there are any allies within a 5 tiles radius, this unit cannot be targeted by normal attacks or skills. This effect is considered as a buff and cannot be dispelled"
+    },
+    "Basic": [
+        {
+            "SkillName": "Territory Awareness\n\n(Basic Attack / Single Target)",
+            "SkillImage": "../img/Lenna/image_33.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Lenna/image_29.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Lenna/image_31.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 7 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 7.0,
+            "RangeImage": "../img/Lenna/image_38.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Wild Extinction\n\n(Skill / Single Target / Debuff)",
+            "SkillImage": "../img/Lenna/image_39.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Lenna/image_29.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Lenna/image_31.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 7 tile radius and deals Electric damage equivalent to 140% ATK to it. If Contamination Gauge has 3 points or more before skill activation, consumes 3 points and increases damage dealt by 30%",
+            "Range": 7.0,
+            "RangeImage": "../img/Lenna/image_41.png",
+            "Effect": "Target",
+            "Vertebrae 1": "If Contamination Gauge has 3 points or more before skill activation, increases damage dealt by 30% → 50%. If the target has Conductance, increases Contamination Gauge by 3 points",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Wild Extinction: When this skill kills the target, increases Contamination Gauge by 2 points",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Leaping Pursuit\n\n(Skill / Single Target / Debuff)",
+            "SkillImage": "../img/Lenna/image_44.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Lenna/image_29.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "../img/Lenna/image_31.png",
+            "SkillExtraTypeBullet": "Electric",
+            "Description": "Selects a tile within a 3 tile cross area of self and lands on the selected tile, dealing Physical damage equivalent to 30% ATK and inflicting Stability Imbalance II to the nearest enemy target within a 7 tile radius. If Contamination Gauge has 3 points or more before skill activation, consumes 3 points and gains Extra Command",
+            "Range": 1.0,
+            "RangeImage": null,
+            "Effect": 7.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases effective range by 2 tiles",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Leaping Pursuit: After this skill is used, applies Conductance on the 2 nearest enemies within a 5 tile radius for 1 turn",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Hunting Strategy\n\n(Ultimate / AoE / Debuff / Buff)",
+            "SkillImage": "../img/Lenna/image_51.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 6 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "../img/Lenna/image_29.png",
+            "SkillTypeBullet": "Electric",
+            "SkillExtraTypeBulletImage": "../img/Lenna/image_31.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Deals AoE Electric damage equivalent to 80% ATK to all enemies within a 5 tile radius, and inflicts Conductance for 1 turn. Creates a Voltage terrain for 3 turns. Lenna gains Arc for 3 turns. If Contamination Gauge has 3 points or more before skill activation, consumes 3 points and gains Concealment for 1 turn",
+            "Range": "Self",
+            "RangeImage": "../img/Lenna/image_53.png",
+            "Effect": 5.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases effective range by 2 tiles, and inflicts 2 random debuffs on targets for 1 turn",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Arc: At the end of Lenna's action, recovers Contamination Gauge fully. Skills no longer need to consume Contamination Gauge in order to be enhanced. Instead, when Contamination Gauge is consumed, increases damage dealt by 20%",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "King's Authority\n\n(Passive / Debuff)",
+            "SkillImage": "../img/Lenna/image_55.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "Lenna is immune from the negative effects of Electric type terrain. When an enemy gains Conductance, increases Contamination Gauge by 1 point. When dealing single target damage, generates a Voltage terrain within a 1 tile radius around the target for 2 turns",
+            "Range": "Self",
+            "RangeImage": "../img/Lenna/image_56.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "For every 3 points of Contamination Gauge consumed, reduces the cooldown of all skills by 1 turn",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "Increases the duration of Concealment by 1 turn",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "../img/Lenna/image_55.png",
+                "SkillName": "King's Authority",
+                "Level": 2.0,
+                "Effect": "For every 3 points of Contamination Gauge consumed, reduces the cooldown of all skills by 1 turn"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Lenna/image_39.png",
+                "SkillName": "Wild Extinction",
+                "Level": 2.0,
+                "Effect": "If Contamination Gauge has 3 points or more before skill activation, increases damage dealt by 30% → 50%. If the target has Conductance, increases Contamination Gauge by 3 points"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Lenna/image_44.png",
+                "SkillName": "Leaping Pursuit",
+                "Level": 2.0,
+                "Effect": "Increases effective range by 2 tiles"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Lenna/image_51.png",
+                "SkillName": "Hunting Strategy",
+                "Level": 2.0,
+                "Effect": "Increases effective range by 2 tiles, and inflicts 2 random debuffs on targets for 1 turn"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Lenna/image_55.png",
+                "SkillName": "King's Authority",
+                "Level": 3.0,
+                "Effect": "Increases the duration of Concealment by 1 turn"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Lenna/image_51.png",
+                "SkillName": "Hunting Strategy",
+                "Level": 3.0,
+                "Effect": "Arc: At the end of Lenna's action, recovers Contamination Gauge fully. Skills no longer need to consume Contamination Gauge in order to be enhanced. Instead, when Contamination Gauge is consumed, increases damage dealt by 20%"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "../img/Lenna/image_63.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +31\nDEF +23",
+                "MaterialsImage1": "../img/Lenna/image_12.png",
+                "MaterialsImage2": "../img/Lenna/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "../img/Lenna/image_64.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +89\nATK +5.0%",
+                "MaterialsImage1": "../img/Lenna/image_7.png",
+                "MaterialsImage2": "../img/Lenna/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "../img/Lenna/image_65.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +38\nDEF +32",
+                "MaterialsImage1": "../img/Lenna/image_8.png",
+                "MaterialsImage2": "../img/Lenna/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "../img/Lenna/image_66.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +122\nHP +5.0%",
+                "MaterialsImage1": "../img/Lenna/image_9.png",
+                "MaterialsImage2": "../img/Lenna/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "../img/Lenna/image_67.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +45\nDEF +42",
+                "MaterialsImage1": "../img/Lenna/image_13.png",
+                "MaterialsImage2": "../img/Lenna/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "../img/Lenna/image_68.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +51\nHP +159",
+                "MaterialsImage1": "../img/Lenna/image_11.png",
+                "MaterialsImage2": "../img/Lenna/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "../img/Lenna/image_69.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "When attacking enemies with Conductance and immunity to Paralysis, ignores 15% DEF",
+                "MaterialsImage1": "../img/Lenna/image_20.png",
+                "MaterialsImage2": "../img/Lenna/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "../img/Lenna/image_70.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "Wild Extinction: When this skill kills the target, increases Contamination Gauge by 2 points",
+                "MaterialsImage1": "../img/Lenna/image_21.png",
+                "MaterialsImage2": "../img/Lenna/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "../img/Lenna/image_71.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "When applying Conductance, changes 1 random buff on the enemy to a random debuff",
+                "MaterialsImage1": "../img/Lenna/image_22.png",
+                "MaterialsImage2": "../img/Lenna/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "../img/Lenna/image_72.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Leaping Pursuit: After this skill is used, applies Conductance on the 2 nearest enemies within a 5 tile radius for 1 turn",
+                "MaterialsImage1": "../img/Lenna/image_23.png",
+                "MaterialsImage2": "../img/Lenna/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "../img/Lenna/image_73.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "When an enemy with Electric type debuffs is killed, increases Contamination Gauge by 1 point",
+                "MaterialsImage1": "../img/Lenna/image_24.png",
+                "MaterialsImage2": "../img/Lenna/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "../img/Lenna/image_74.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "When Lenna enters into Stability Break from being attacked, inflicts Paralysis on all enemy targets within a 5 tile radius for 1 turn. This effect can be triggered once per battle",
+                "MaterialsImage1": "../img/Lenna/image_25.png",
+                "MaterialsImage2": "../img/Lenna/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "../img/Lenna/image_75.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "CRIT +5.0% / When the user deals single target damage, applies Conductance on the target for 1 turn. This effect can be activated up to twice per turn",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}
