@@ -1,0 +1,369 @@
+{
+    "CharImage": "/public/img/Nemesis/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_NemesisSR.png",
+    "Name": "Nemesis",
+    "Class": "Sentinel",
+    "ClassImage": "/public/img/Nemesis/image_27.png",
+    "Attributes": {
+        "HP": 1656.0,
+        "ATK": 703.0,
+        "DEF": 463.0,
+        "StabilityGauge": "9 points",
+        "MovementSpeed": "4 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Heavy Type Bullet",
+        "SAtt1Image": "/public/img/Nemesis/image_28.png",
+        "SAtt2": "Corrosion",
+        "SAtt2Image": "/public/img/Nemesis/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Light Type Bullet",
+        "Weakness1Image": "/public/img/Nemesis/image_29.png",
+        "Weakness2": "Turbid",
+        "Weakness2Image": "/public/img/Nemesis/image_31.png"
+    },
+    "Effects": {
+        "Full": "DEF Decrease II: Decreases DEF by 30%. This is considered as a Defense type debuff\n\nDeath Prophecy: When the holder receives single target damage, Nemesis activates Action Support against the enemy, and increases Contamination Gauge by 2 points. This effect can only activate once, and cannot be dispelled\n\nAction Support: This is considered as a Support attack. Attacks once. Cannot be triggered by Support attacks\n\nInsight: Increases effective range of Ultimate skill by 1 tile. This is considered as a buff\n\nATK Increase I: Increases ATK by 10%. This is considered as a buff\n\nDamage Increase I: Increases damage dealt by 10%. This is considered as a buff\n\nExtra Movement: Can move once, but is unable to execute any commands"
+    },
+    "Basic": [
+        {
+            "SkillName": "Victory Portent\n\n(Basic Attack / Single Target)",
+            "SkillImage": "/public/img/Nemesis/image_32.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Nemesis/image_52.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Nemesis/image_53.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 9.0,
+            "RangeImage": "/public/img/Nemesis/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Enlightened Star\n\n(Skill / Single Target)",
+            "SkillImage": "/public/img/Nemesis/image_38.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Nemesis/image_52.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Nemesis/image_53.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius and deals Physical damage equivalent to 130% ATK to it. When attacking while near cover, increases damage dealt by 20% and increases Contamination Gauge by 2 points",
+            "Range": 9.0,
+            "RangeImage": "/public/img/Nemesis/image_40.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": "If the target has Death Prophecy, increases damage dealt by 10%",
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Penetrating Casket\n\n(Skill / Single Target / Debuff)",
+            "SkillImage": "/public/img/Nemesis/image_44.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Nemesis/image_52.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Nemesis/image_53.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius, applies DEF Decrease II for 1 turn, and deals Physical damage equivalent to 130% ATK to it",
+            "Range": 9.0,
+            "RangeImage": "/public/img/Nemesis/image_46.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "If the target has a Defense type debuff, increases Contamination Gauge by 1 point",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Constellation Pursuit\n\n(Ultimate / Single Target)",
+            "SkillImage": "/public/img/Nemesis/image_51.png",
+            "Att1": "Stability Damage: 4",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 3",
+            "SkillTypeBulletImage": "/public/img/Nemesis/image_52.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Nemesis/image_53.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 9 tile radius, and deals Corrosion damage equivalent to 170% ATK to it. For each point of Contamination Gauge held, increases damage by 10%",
+            "Range": 9.0,
+            "RangeImage": "/public/img/Nemesis/image_54.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": "If Nemesis has Insight, deals Corrosion damage equivalent to 170% \u2192 180% ATK",
+            "Vertebrae 6": "For each debuff on the target, increases CRIT to 20%, up to 100%",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Remote Observation\n\n(Passive / Buff)",
+            "SkillImage": "/public/img/Nemesis/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the start of the action, applies Death Prophecy on the nearest 2 enemies within range for 1 turn. Action Support deals Physical damage equivalent to 80% ATK and 2 Stability Damage to it. Gains Insight after Action Support for 1 turn",
+            "Range": "Self",
+            "RangeImage": "/public/img/Nemesis/image_57.png",
+            "Effect": 9.0,
+            "Vertebrae 1": "Extends the duration of Death Prophecy by 1 turn",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "When Nemesis has Insight, further increases damage dealt by 10%",
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades":
+        {
+            "1": [
+                {
+                    "IconImage": "/public/img/Nemesis/image_38.png",
+                    "SkillName": "Remote Observation",
+                    "Level": 2.0,
+                    "Effect": "Extends the duration of Death Prophecy by 1 turn"
+                }
+            ],
+            "2": [
+                {
+                    "IconImage": "/public/img/Nemesis/image_44.png",
+                    "SkillName": "Enlightened Star",
+                    "Level": 2.0,
+                    "Effect": "If the target has Death Prophecy, increases damage dealt by 10%"
+                }
+            ],
+            "3": [
+                {
+                    "IconImage": "/public/img/Nemesis/image_51.png",
+                    "SkillName": "Penetrating Casket",
+                    "Level": 2.0,
+                    "Effect": "If the target has a Defense type debuff, increases Contamination Gauge by 1 point"
+                }
+            ],
+            "4": [
+                {
+                    "IconImage": "/public/img/Nemesis/image_56.png",
+                    "SkillName": "Remote Observation",
+                    "Level": 3.0,
+                    "Effect": "When Nemesis has Insight, further increases damage dealt by 10%"
+                }
+            ],
+            "5": [
+                {
+                    "IconImage": "/public/img/Nemesis/image_44.png",
+                    "SkillName": "Constellation Pursuit",
+                    "Level": 2.0,
+                    "Effect": "If Nemesis has Insight, deals Corrosion damage equivalent to 170% \u2192 180% ATK"
+                }
+            ],
+            "6": [
+                {
+                    "IconImage": "/public/img/Nemesis/image_56.png",
+                    "SkillName": "Constellation Pursuit",
+                    "Level": 3.0,
+                    "Effect": "For each debuff on the target, increases CRIT to 20%, up to 100%"
+                }
+            ]
+        }
+    ,
+    "Enhancements": [
+        {
+            "1": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 5",
+                    "Level": 40.0,
+                    "Effect": "When Nemesis kills a target with Death Prophecy, additionally increases Contamination Gauge by 1 point",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "2\n\n\n12000"
+                }
+            ],
+            "2": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 6",
+                    "Level": 40.0,
+                    "Effect": "When Nemesis has Insight, she is immune to displacement effects by enemy units",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "2\n\n\n12000"
+                }
+            ],
+            "3": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Common Key",
+                    "Level": 40.0,
+                    "Effect": "ATK +4.0% / When killing an enemy target, if the user has Insight, gains 3 tiles of Extra Movement",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "None"
+                }
+            ],
+            "4": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "5": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "6": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "7": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "8": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "9": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "10": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "11": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "12": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ],
+            "13": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": null,
+                    "Level": null,
+                    "Effect": null,
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": null
+                }
+            ]
+        }
+    ]
+}

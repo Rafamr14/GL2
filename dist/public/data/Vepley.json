@@ -1,0 +1,365 @@
+{
+    "CharImage": "/public/img/Vepley/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_VepleySSR.png",
+    "Name": "Vepley",
+    "Class": "Vanguard",
+    "ClassImage": "/public/img/Vepley/image_27.png",
+    "Attributes": {
+        "HP": 1851.0,
+        "ATK": 696.0,
+        "DEF": 528.0,
+        "StabilityGauge": "8 points",
+        "MovementSpeed": "8 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Shotgun",
+        "SAtt1Image": "/public/img/Vepley/image_28.png",
+        "SAtt2": null,
+        "SAtt2Image": null
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "/public/img/Vepley/image_29.png",
+        "Weakness2": "Turbid",
+        "Weakness2Image": "/public/img/Vepley/image_30.png"
+    },
+    "Effects": {
+        "Full": "Overenthusiasm: Receives 30% more damage from attacks by Vepley. This effect is considered as a debuff and cannot be dispelled\n\nVulnerability II: Increases damage received by 20%\n\nMovement Reduction II: Reduces Movement Speed by 2 tiles\n\nExtra Movement: Can move once, but is unable to execute any commands\n\nMovement Failure: Unable to move. This effect is considered as a movement type debuff\n\nStun: Unable to take action\n\nFast Acting Barrier: Decreases damage received from single target attacks by 60%. This effect can only activate once and is considered as a buff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Live Interaction\n\n(Basic Attack / Single Target)",
+            "SkillImage": "/public/img/Vepley/image_31.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Vepley/image_28.png",
+            "SkillTypeBullet": "Shotgun",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 5 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 5.0,
+            "RangeImage": "/public/img/Vepley/image_36.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "All Out Performance\n\n(Skill / AoE / Cover Destruction / Displacement)",
+            "SkillImage": "/public/img/Vepley/image_37.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Vepley/image_28.png",
+            "SkillTypeBullet": "Shotgun",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a direction, and deals Physical damage that ignores Cover equivalent to 75% ATK to the first enemy target on every straight line in a 3x5 tile radius along the direction, and knocks them back by 4 tile. This skill also destroys all destructible cover within skill range, except for a 3x3 range of self",
+            "Range": 1.0,
+            "RangeImage": "/public/img/Vepley/image_39.png",
+            "Effect": "--",
+            "Vertebrae 1": "Gains 3 tiles of Extra Movement if this skill hits 2 or more targets",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "All Out Performance: Range changes to 5x3, enemies are knocked back by 1 tile instead",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Exclusive Stage\n\n(Skill / Single Target / Dispel)",
+            "SkillImage": "/public/img/Vepley/image_43.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 1",
+            "SkillTypeBulletImage": "/public/img/Vepley/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 5 tile radius and deals Physical damage equivalent to 150% ATK to it. If the target is not under the protection of Cover, dispels 2 buffs before attacking",
+            "Range": 5.0,
+            "RangeImage": "/public/img/Vepley/image_44.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases CRIT rate by 100% when attacking targets with movement type debuffs",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Exclusive Stage: This skill ignores 10% of the damage reduction from Cover when attacking targets with movement type debuffs",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Infectious Enthusiasm\n\n(Skill / AoE / Debuff)",
+            "SkillImage": "/public/img/Vepley/image_47.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 3",
+            "SkillTypeBulletImage": "/public/img/Vepley/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a tile within a 5 tile radius, and deals AoE Physical damage equivalent to 100% ATK to all enemy targets within a 2 tile radius, and applies Overenthusiasm and Vulnerability II for 2 turns",
+            "Range": 5.0,
+            "RangeImage": "/public/img/Vepley/image_50.png",
+            "Effect": 2.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Overenthusiasm is applied before attacking",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "If this skill only hit 1 enemy, applies Stun for 1 turn",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Idol Talent\n\n(Passive / Debuff)",
+            "SkillImage": "/public/img/Vepley/image_54.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the start of the action, increases Contamination Gauge by 1 point. For each instance of damage dealt, increases Contamination Gauge by 1 point. Increases damage dealt against targets with movement type debuffs by 20%. If Vepley moved 5 or more tiles, applies Movement Reduction II before attacking for 2 turns",
+            "Range": "Entire Map",
+            "RangeImage": "/public/img/Vepley/image_55.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "If Vepley moved 5 → 3 or more tiles, applies Movement Reduction II for 2 turns",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "If the target has movement type debuffs, applies Movement Failure for 1 turn",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "/public/img/Vepley/image_37.png",
+                "SkillName": "All Out Performance",
+                "Level": 2.0,
+                "Effect": "Gains 3 tiles of Extra Movement if this skill hits 2 or more targets"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Vepley/image_43.png",
+                "SkillName": "Exclusive Stage",
+                "Level": 2.0,
+                "Effect": "Increases CRIT rate by 100% when attacking targets with movement type debuffs"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Vepley/image_47.png",
+                "SkillName": "Infectious Enthusiasm",
+                "Level": 2.0,
+                "Effect": "Overenthusiasm is applied before attacking"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Vepley/image_54.png",
+                "SkillName": "Idol Talent",
+                "Level": 2.0,
+                "Effect": "If Vepley moved 5 → 3 or more tiles, applies Movement Reduction II for 2 turns"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Vepley/image_54.png",
+                "SkillName": "Idol Talent",
+                "Level": 3.0,
+                "Effect": "If the target has movement type debuffs, applies Movement Failure for 1 turn"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Vepley/image_47.png",
+                "SkillName": "Infectious Enthusiasm",
+                "Level": 3.0,
+                "Effect": "If this skill only hit 1 enemy, applies Stun for 1 turn"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "/public/img/Vepley/image_62.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +32\nDEF +22",
+                "MaterialsImage1": "/public/img/Vepley/image_12.png",
+                "MaterialsImage2": "/public/img/Vepley/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Vepley/image_63.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +78\nATK +5.0%",
+                "MaterialsImage1": "/public/img/Vepley/image_7.png",
+                "MaterialsImage2": "/public/img/Vepley/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Vepley/image_64.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +39\nDEF +30",
+                "MaterialsImage1": "/public/img/Vepley/image_8.png",
+                "MaterialsImage2": "/public/img/Vepley/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Vepley/image_65.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +107\nATK +5.0%",
+                "MaterialsImage1": "/public/img/Vepley/image_9.png",
+                "MaterialsImage2": "/public/img/Vepley/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Vepley/image_66.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +46\nDEF + 40",
+                "MaterialsImage1": "/public/img/Vepley/image_13.png",
+                "MaterialsImage2": "/public/img/Vepley/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Vepley/image_67.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +53\nHP +140",
+                "MaterialsImage1": "/public/img/Vepley/image_11.png",
+                "MaterialsImage2": "/public/img/Vepley/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "/public/img/Vepley/image_68.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "Increase damage dealt to Stability Gauge against targets with movement type debuffs by 2 points",
+                "MaterialsImage1": "/public/img/Vepley/image_20.png",
+                "MaterialsImage2": "/public/img/Vepley/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "/public/img/Vepley/image_69.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "All Out Performance: Range changes to 5x3, enemies are knocked back by 1 tile instead",
+                "MaterialsImage1": "/public/img/Vepley/image_21.png",
+                "MaterialsImage2": "/public/img/Vepley/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "/public/img/Vepley/image_70.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "If there are no allies within a 6 tile radius of self, gains 1 layer of Fast Acting Barrier at the end of the action",
+                "MaterialsImage1": "/public/img/Vepley/image_22.png",
+                "MaterialsImage2": "/public/img/Vepley/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "/public/img/Vepley/image_71.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Exclusive Stage: This skill ignores 10% of the damage reduction from Cover when attacking targets with movement type debuffs",
+                "MaterialsImage1": "/public/img/Vepley/image_23.png",
+                "MaterialsImage2": "/public/img/Vepley/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "/public/img/Vepley/image_72.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "If Vepley is near Cover, reduces damage received from AoE attacks by 20%",
+                "MaterialsImage1": "/public/img/Vepley/image_24.png",
+                "MaterialsImage2": "/public/img/Vepley/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "/public/img/Vepley/image_73.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "When applying movement type debuffs to large targets, additionally deals an instance of fixed damage equivalent to 15% ATK to the enemy",
+                "MaterialsImage1": "/public/img/Vepley/image_25.png",
+                "MaterialsImage2": "/public/img/Vepley/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "/public/img/Vepley/image_74.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "ATK +5.0% / If the user's movement speed is higher than the target's, increases damage dealt by 7%",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

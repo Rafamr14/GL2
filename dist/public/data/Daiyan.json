@@ -1,0 +1,365 @@
+{
+    "CharImage": "/public/img/Daiyan/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_DaiyanSSR.png",
+    "Name": "Daiyan",
+    "Class": "Vanguard",
+    "ClassImage": "/public/img/Daiyan/image_27.png",
+    "Attributes": {
+        "HP": 1616.0,
+        "ATK": 722.0,
+        "DEF": 504.0,
+        "StabilityGauge": "8 points",
+        "MovementSpeed": "9 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Medium Type Bullet",
+        "SAtt1Image": "/public/img/Daiyan/image_28.png",
+        "SAtt2": "Light Type Bullet",
+        "SAtt2Image": "/public/img/Daiyan/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Medium Type Bullet",
+        "Weakness1Image": "/public/img/Daiyan/image_29.png",
+        "Weakness2": "Burn",
+        "Weakness2Image": "/public/img/Daiyan/image_31.png"
+    },
+    "Effects": {
+        "Full": "Calibration: Increases CRIT by 3%, CRIT DMG by 3%, can be stacked up to 10 times. Gains 6 tiles of Extra Movement after attacking. This is considered as a buff and cannot be dispelled\n\nTuning: Deals Stability Damage equivalent to the number of Calibration stacks before attacking. This can only activate once and cannot be dispelled\n\nExtra Command: Can execute any action except for movement\n\nExtra Movement: Can move once, but is unable to execute any commands\n\nAmbush: Attacks once. Cannot be triggered by Counter or Support attacks\n\nMovement Increase I: Increases movement speed by 1 tile. This is considered as a buff"
+    },
+    "Basic": [
+        {
+            "SkillName": "String Flick\n\n(Basic Attack / Single Target)",
+            "SkillImage": "/public/img/Daiyan/image_32.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Daiyan/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Daiyan/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Daiyan/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Absolute Tuning\n\n(Skill / Single Target / Dispel)",
+            "SkillImage": "/public/img/Daiyan/image_38.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 1",
+            "SkillTypeBulletImage": "/public/img/Daiyan/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Daiyan/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius, dispels 1 buff, and deals Physical damage equivalent to 150% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Daiyan/image_40.png",
+            "Effect": "Target",
+            "Vertebrae 1": "If the target does not have any dispellable buffs, gains 1 layer of Calibration after attacking",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Absolute Tuning: For each 3 layers of Calibration, dispels 1 additional buff",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Qing Shang Harmony\n\n(Skill / Buff)",
+            "SkillImage": "/public/img/Daiyan/image_44.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 4",
+            "SkillTypeBulletImage": "/public/img/Daiyan/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "/public/img/Daiyan/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Gains 3 layers of Calibration; gains Tuning for 1 turn. Gains one instance of Extra Command",
+            "Range": "Self",
+            "RangeImage": "/public/img/Daiyan/image_45.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases Calibration layers gained by 3",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Qing Shang Harmony: After this skill is used, if Daiyan kills an enemy in the same turn, restores HP equivalent to 20% max HP and 2 Stability Points",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Ethereal Resonance\n\n(Ultimate / Single Target / Buff)",
+            "SkillImage": "/public/img/Daiyan/image_51.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 6 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Daiyan/image_28.png",
+            "SkillTypeBullet": "Medium Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Daiyan/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius, and deals Physical damage equivalent to 190% ATK to it. For each layer of Calibration, reduces the cooldown of this skill by 1 turn\n\nAfter attacking, consumes all Calibration stacks and gains 1 layer of Permanent Calibration, which can be stacked up to 3 times",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Daiyan/image_53.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases the maximum layers of Permanent Calibration by 3",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "For every enemy killed, gains 1 layer of Permanent Calibration",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Swift Harmony\n\n(Passive / Ambush)",
+            "SkillImage": "/public/img/Daiyan/image_54.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the start of the action, increases Contamination Gauge by 1 point and gains 1 layer of Calibration. When attacking targets not under the protection of Cover, increases Contamination Gauge by 1 point\n\nWhen there are more than 2 Calibration stacks, before receiving single target damage from enemies within range, Daiyan activates Ambush against the enemy, dealing Physical damage equivalent to 150% ATK and 4 Stability Damage, and gains 1 layer of Permanent Calibration. This effect can be triggered once per turn\n\nWhen there are more than 3 Calibration stacks, increases damage dealt by 20%",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Daiyan/image_55.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "When there are more than 5 Calibration stacks, increases damage dealt by 40% instead, and Ambush deals Physical damage equivalent to 180% ATK and 6 Stability damage",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "When the number of Permanent Calibration layers reaches maximum, ignores 15% of the damage protection from Cover when attacking Exposed enemies",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "/public/img/Daiyan/image_38.png",
+                "SkillName": "Absolute Tuning",
+                "Level": 2.0,
+                "Effect": "If the target does not have any dispellable buffs, gains 1 layer of Calibration after attacking"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Daiyan/image_44.png",
+                "SkillName": "Qing Shang Harmony",
+                "Level": 2.0,
+                "Effect": "Increases Calibration layers gained by 3"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Daiyan/image_51.png",
+                "SkillName": "Ethereal Resonance",
+                "Level": 2.0,
+                "Effect": "Increases the maximum layers of Permanent Calibration by 3"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Daiyan/image_54.png",
+                "SkillName": "Swift Harmony",
+                "Level": 2.0,
+                "Effect": "When there are more than 5 Calibration stacks, increases damage dealt by 40% instead, and Ambush deals Physical damage equivalent to 180% ATK and 6 Stability damage"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Daiyan/image_54.png",
+                "SkillName": "Swift Harmony",
+                "Level": 3.0,
+                "Effect": "When the number of Permanent Calibration layers reaches maximum, ignores 15% of the damage protection from Cover when attacking Exposed enemies"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Daiyan/image_51.png",
+                "SkillName": "Ethereal Resonance",
+                "Level": 3.0,
+                "Effect": "For every enemy killed, gains 1 layer of Permanent Calibration"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "/public/img/Daiyan/image_62.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +34\nDEF +21",
+                "MaterialsImage1": "/public/img/Daiyan/image_12.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Daiyan/image_63.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +68\nATK +5.0%",
+                "MaterialsImage1": "/public/img/Daiyan/image_7.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Daiyan/image_64.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +41\nDEF +29",
+                "MaterialsImage1": "/public/img/Daiyan/image_8.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Daiyan/image_65.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +94\nCRIT DMG +10.0%",
+                "MaterialsImage1": "/public/img/Daiyan/image_9.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Daiyan/image_66.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +48\nDEF +38",
+                "MaterialsImage1": "/public/img/Daiyan/image_13.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Daiyan/image_67.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +55\nHP +122",
+                "MaterialsImage1": "/public/img/Daiyan/image_11.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "/public/img/Daiyan/image_68.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "When Daiyan has Calibration, increases movement speed by 1 tile",
+                "MaterialsImage1": "/public/img/Daiyan/image_20.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "/public/img/Daiyan/image_69.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "At the start of the battle, increases Contamination Gauge by 3 points",
+                "MaterialsImage1": "/public/img/Daiyan/image_21.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "/public/img/Daiyan/image_70.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "For each extra movement point when attacking, increases CRIT by 10%\n\n(TL Note: \"Extra\" refers to additional movement points gained from buffs like \"Movement Increase I\")",
+                "MaterialsImage1": "/public/img/Daiyan/image_22.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "/public/img/Daiyan/image_71.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "If Daiyan's movement speed is higher than the target's, gains 1 layer of Calibration before attacking",
+                "MaterialsImage1": "/public/img/Daiyan/image_23.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "/public/img/Daiyan/image_72.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "Absolute Tuning: For each 3 layers of Calibration, dispels 1 additional buff",
+                "MaterialsImage1": "/public/img/Daiyan/image_24.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "/public/img/Daiyan/image_73.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "Qing Shang Harmony: After this skill is used, if Daiyan kills an enemy in the same turn, restores HP equivalent to 20% max HP and 2 Stability Points",
+                "MaterialsImage1": "/public/img/Daiyan/image_25.png",
+                "MaterialsImage2": "/public/img/Daiyan/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "/public/img/Daiyan/image_74.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "CRIT +5.0% / At the start of the action, gains Movement Increase I for 1 turn. This has a cooldown of 1 turn",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

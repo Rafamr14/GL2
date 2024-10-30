@@ -1,0 +1,432 @@
+{
+    "CharImage": "/public/img/Papasha/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_PapashaSSR.png",
+    "Name": "Papasha",
+    "Class": "Sentinel",
+    "ClassImage": "/public/img/Papasha/image_27.png",
+    "Attributes": {
+        "HP": 2226.0,
+        "ATK": 998.0,
+        "DEF": 620.0,
+        "StabilityGauge": "9 points",
+        "MovementSpeed": "5 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Light Type Bullet",
+        "SAtt1Image": "/public/img/Papasha/image_28.png",
+        "SAtt2": null,
+        "SAtt2Image": null
+    },
+    "Weakness": {
+        "Weakness1": "Shotgun",
+        "Weakness1Image": "/public/img/Papasha/image_29.png",
+        "Weakness2": "Corrosion",
+        "Weakness2Image": "/public/img/Papasha/image_30.png"
+    },
+    "Effects": {
+        "Full": "Bravery of Resistance: Increases damage dealt by Anti Terror Support by 30%, This is considered as a buff and cannot be dispelled\n\nReorganization: The holder becomes immune to all damage and fixed damage, and is unable to act or receive damage. When the duration of this effect ends, removes all debuffs and recovers all HP and Stability Gauge\n\nPersistent Will: When attacking, increases damage dealt based on the target's remaining HP, up to a maximum of 60%. This is considered as a buff and cannot be dispelled\n\nUnited Strength: For each layer of this effect, increases damage dealt by single target attacks from Papasha and City Guard by 10%. When Papasha selects a new target, all layers are cleared. This can be stacked up to 3 times, is considered as a buff and cannot be dispelled\n\nProtection Will: Increases the number of Overwatch used by 1 time. After each attack on an enemy target, increases damage dealt to that target by 5%. This is considered as a buff and cannot be dispelled\n\nMedal's Glory: Increases ATK by 10%. This is considered as a buff and cannot be dispelled"
+    },
+    "Basic": [
+        {
+            "SkillName": "Warning Shot\n\n(Basic Attack / Single Target)",
+            "SkillImage": "/public/img/Papasha/image_31.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 60% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Papasha/image_36.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Honor Guard\n\n(Skill / AoE / Buff)",
+            "SkillImage": "/public/img/Papasha/image_37.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 2",
+            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius, and deals AoE Physical damage equivalent to 80% ATK to the target and all enemies within a 1 tile radius. If the selected target's Stability Gauge is greater than 0 after attacking, City Guard gains Bravery of Resistance for 3 turns",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Papasha/image_38.png",
+            "Effect": 1.0,
+            "Vertebrae 1": "Decreases the duration of Reorganization by 1 turn. City Guard recovers HP equivalent to 20% max HP when Papasha is healed instead.\n\nCity Guard no longer requires the target's Stability to be above 0 in order to gain Bravery of Resistance. Enhances the effect of Bravery of Resistance: Ignores 30% DEF when attacking large targets",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Honor Guard: This skill deals 20% more damage to large targets, and increases damage dealt to Stability Gauge by Anti Terror Support by 2 points",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Silent Breakthrough\n\n(Skill / Single Target / Dispel)",
+            "SkillImage": "/public/img/Papasha/image_42.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 4",
+            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a tile within a 6 tile radius, dispels 2 debuffs from self, dispels all control effects, command restriction, and frozen debuffs from City Guard. City Guard will move to the selected tile and deals Physical damage equivalent to 150% ATK to the nearest enemy to Papasha. Damage dealt increases by 50% towards large targets\n\nAfter this skill is used, City Guard is unable to move independently for this turn. This skill cannot be used if City Guard is in Reorganization status",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Papasha/image_43.png",
+            "Effect": "Entire Map",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Tile selection is expanded to the entire field, and this skill will definitely land a critical hit. At the end of the turn, City Guard activates Anti Terror Support once against the nearest enemy to it",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Silent Breakthrough: When this skill deals damage, if there are no enemies within a 3 tile radius of City Guard, increases damage dealt by 10%",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Heart of Protection\n\n(Ultimate / Single Target / Buff)",
+            "SkillImage": "/public/img/Papasha/image_48.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": null,
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 150% ATK to it. City Guard gains Persistent Will for 2 turns\n\nFor each buff held by self before attacking, City Guard gains a random offensive buff, up to a maximum of 2 for 2 turns",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Papasha/image_50.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "The upper limit of the damage increase provided by Persistent Will is increased to 80%. The effects of the random offensive buffs gained is enhanced, and the upper limit of buffs gained is increased to 3. Each stack of United Strength is considered as an independent buff",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "At the start of the battle, City Guard gains Persistent Will permanently. Heart of Protection grants Protection Will to City Guard for 2 turns instead",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "United Guards\n\n(Passive / Summon)",
+            "SkillImage": "/public/img/Papasha/image_51.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the start of the battle, summons a City Guard near Papasha\n\nAfter City Guard or Papasha attacks, increases Contamination Gauge by 1 point\n\nAfter Papasha lands a critical hit, increases CRIT rate for City Guard's next attack by 20%. After City Guard lands a critical hit, increases CRIT rate for Papasha's next attack by 20%\n",
+            "Range": "Self",
+            "RangeImage": "/public/img/Papasha/image_52.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "Increases CRIT rate by 30% and CRIT DMG by 20% for City Guard. At the start of the battle, Papasha gains 3 layers of United Strength. At the end of the action, Papasha gains 1 layer of United Strength",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "City Guard gains Security Monitor",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "City Guard": [
+        {
+            "Info": [
+                {
+                    "CharImage": "/public/img/Papasha/image_53.png",
+                    "CharName": "City Guard",
+                    "Name": "City Guard",
+                    "Description": "At the start of the battle, City Guard is summoned on one of the four tiles next to Papasha\n\nBy default, it will be summoned on the tile to the right of Papasha. If that tile is invalid, it will be summoned on the tile to the left. If it is still invalid, it will be summoned on the tile behind\n\nCity Guard inherits Papasha's initial ATK, DEF, 80% max HP, Stability and element and weapon type weakness. It has an initial value of 20% CRIT and 120% CRIT DMG. It has a movement speed of 5 tiles\n\nWhen Papasha is unable to battle, City Guard will also be unable to battle. City Guard cannot be manually controlled, however, it automatically searches for cover at the end of the turn. "
+                }
+            ],
+            "Skills": [
+                {
+                    "Passive 1": [
+                        {
+                            "SkillName": "Anti Terror Support\n\n(Passive / Support)",
+                            "SkillImage": "/public/img/Papasha/image_54.png",
+                            "Att1": "Stability Damage: 3",
+                            "Att2": "Cooldown: 0 turns",
+                            "Att3": "Contamination Gauge Consumption: 0",
+                            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+                            "SkillTypeBullet": "Light Type Bullet",
+                            "SkillExtraTypeBulletImage": null,
+                            "SkillExtraTypeBullet": null,
+                            "Description": "After Papasha attacks an enemy target, City Guard will support by attacking the same target, dealing Physical damage equivalent to 80% ATK.",
+                            "Range": "Entire Map",
+                            "RangeImage": null,
+                            "Effect": "Target"
+                        }
+                    ],
+                    "Passive 2": [
+                        {
+                            "SkillName": "Blast Protection\n\n(Passive / Heal)",
+                            "SkillImage": "/public/img/Papasha/image_54.png",
+                            "Att1": "Stability Damage: 0",
+                            "Att2": "Cooldown: 0 turns",
+                            "Att3": "Contamination Gauge Consumption: 0",
+                            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+                            "SkillTypeBullet": null,
+                            "SkillExtraTypeBulletImage": null,
+                            "SkillExtraTypeBullet": null,
+                            "Description": "At the end of the turn, City Guard will move independently to search for cover\n\nCity Guard cannot be healed or have a Shield applied on it. When Papasha is healed, City Guard recovers HP equivalent to 10% of its max HP\n\nWhen City Guard receives fatal damage, it enters into Reorganization state for 2 turns",
+                            "Range": "Self",
+                            "RangeImage": "/public/img/Papasha/image_58.png",
+                            "Effect": "Target"
+                        }
+                    ],
+                    "Passive 3": [
+                        {
+                            "SkillName": "Security Monitor\n\n(Passive)",
+                            "SkillImage": "/public/img/Papasha/image_59.png",
+                            "Att1": "Stability Damage: WIP",
+                            "Att2": "Cooldown: 0 turns",
+                            "Att3": "Contamination Gauge Consumption: 0",
+                            "SkillTypeBulletImage": "/public/img/Papasha/image_28.png",
+                            "SkillTypeBullet": null,
+                            "SkillExtraTypeBulletImage": null,
+                            "SkillExtraTypeBullet": null,
+                            "Description": "At the end of the action, activates Overwatch on the entire field. After an enemy uses normal attack or skill, deals damage equivalent to 40% ATK. This can be activated once per turn",
+                            "Range": "WIP",
+                            "RangeImage": null,
+                            "Effect": "WIP"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "/public/img/Papasha/image_37.png",
+                "SkillName": "Honor Guard",
+                "Level": 2.0,
+                "Effect": "Decreases the duration of Reorganization by 1 turn. City Guard recovers HP equivalent to 20% max HP when Papasha is healed instead.\n\nCity Guard no longer requires the target's Stability to be above 0 in order to gain Bravery of Resistance. Enhances the effect of Bravery of Resistance: Ignores 30% DEF when attacking large targets"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Papasha/image_42.png",
+                "SkillName": "Silent Breakthrough",
+                "Level": 2.0,
+                "Effect": "Tile selection is expanded to the entire field, and this skill will definitely land a critical hit. At the end of the turn, City Guard activates Anti Terror Support once against the nearest enemy to it"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Papasha/image_51.png",
+                "SkillName": "United Guards",
+                "Level": 2.0,
+                "Effect": "Increases CRIT rate by 30% and CRIT DMG by 20% for City Guard. At the start of the battle, Papasha gains 3 layers of United Strength. At the end of the action, Papasha gains 1 layer of United Strength"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Papasha/image_48.png",
+                "SkillName": "Heart of Protection",
+                "Level": 2.0,
+                "Effect": "The upper limit of the damage increase provided by Persistent Will is increased to 80%. The effects of the random offensive buffs gained is enhanced, and the upper limit of buffs gained is increased to 3. Each stack of United Strength is considered as an independent buff"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Papasha/image_51.png",
+                "SkillName": "United Guards",
+                "Level": 3.0,
+                "Effect": "City Guard gains Security Monitor"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Papasha/image_48.png",
+                "SkillName": "Heart of Protection",
+                "Level": 3.0,
+                "Effect": "At the start of the battle, City Guard gains Persistent Will permanently. Heart of Protection grants Protection Will to City Guard for 2 turns instead"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Papasha/image_54.png",
+                "Enhancement 1": "Anti Terror Support\n\n(Passive / Support)",
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "Light Type Bullet"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "4": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "5": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "6": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "7": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "8": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": "Cooldown: 0 turns",
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "9": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "10": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "11": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "12": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ],
+        "13": [
+            {
+                "IconImage": null,
+                "Enhancement 1": null,
+                "Level": null,
+                "Effect": null,
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": null
+            }
+        ]
+    }
+}

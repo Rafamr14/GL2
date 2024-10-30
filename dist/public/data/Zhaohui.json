@@ -1,0 +1,365 @@
+{
+    "CharImage": "/public/img/Zhaohui/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_ZhaohuiSSR.png",
+    "Name": "Zhaohui",
+    "Class": "Vanguard",
+    "ClassImage": "/public/img/Zhaohui/image_27.png",
+    "Attributes": {
+        "HP": 1975.0,
+        "ATK": 943.0,
+        "DEF": 590.0,
+        "StabilityGauge": "8 points",
+        "MovementSpeed": "9 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Light Type Bullet",
+        "SAtt1Image": "/public/img/Zhaohui/image_28.png",
+        "SAtt2": "Turbid",
+        "SAtt2Image": "/public/img/Zhaohui/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Heavy Type Bullet",
+        "Weakness1Image": "/public/img/Zhaohui/image_29.png",
+        "Weakness2": "Burn",
+        "Weakness2Image": "/public/img/Zhaohui/image_31.png"
+    },
+    "Effects": {
+        "Full": "Stun: Unable to take action\n\nFixed Interest: When the holder takes damage, the attacker recovers HP equivalent to 20% of the damage dealt. This is considered as a Turbid type debuff\n\nDampness: Decreases healing received by 40%, after this effect is stacked twice, this effect changes to Stasis for 2 turns\n\nStasis: Unable to receive any healing. This is considered as a Turbid type debuff\n\nAction Support: This is considered as a Support attack. Attacks once. Cannot be triggered by Support attacks\n\nFast Acting Barrier: Decreases damage received from single target attacks by 60%. This effect can only activate once and is considered as a buff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Wind Penetrating Shot\n\n(Normal Attack / Single Target)",
+            "SkillImage": "/public/img/Zhaohui/image_32.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Zhaohui/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Zhaohui/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 6 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Zhaohui/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Shadow Assault\n\n(Skill / AoE / Control)",
+            "SkillImage": "/public/img/Zhaohui/image_38.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 1 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Zhaohui/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Zhaohui/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects a direction and deals AoE Physical Damage equivalent to 110% ATK to all enemy targets within 4 tiles along the direction. Applies Stun for 1 turn if the target has Turbid type debuffs. Increases Contamination Gauge by 1 point, and increases CRIT rate of the next active attack for self by 10%",
+            "Range": 1.0,
+            "RangeImage": "/public/img/Zhaohui/image_40.png",
+            "Effect": 4.0,
+            "Vertebrae 1": "The target no longer needs to have Turbid type debuffs to apply Stun. For each target hit, recovers Stability Gauge by 1 point. Increases CRIT rate of the next active attack by 20% instead, and for each target hit, further increases CRIT rate by 5%",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Shadow Assault: When this skill only hits 1 target, deals additional fixed damage equivalent to 10% ATK, and applies Dampness for 2 turns",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Static Gale\n\n(Skill / AoE / Summon / Debuff)",
+            "SkillImage": "/public/img/Zhaohui/image_44.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Zhaohui/image_28.png",
+            "SkillTypeBullet": "Turbid",
+            "SkillExtraTypeBulletImage": "/public/img/Zhaohui/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an empty tile within a 6 tile radius, and summons a Shadow Spike, dealing AoE Turbid damage equivalent to 90% ATK to all enemy targets within a 2 tile radius and inflicts Fixed Interest for 2 turns",
+            "Range": 6.0,
+            "RangeImage": "/public/img/Zhaohui/image_46.png",
+            "Effect": 2.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases range by 3 tiles, effect range by 1 tile, damage dealt to Stability Gauge by 1 point, and damage dealt to 110% ATK",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Static Gale: When this skill is used, gains 1 layer of Fast Acting Barrier, and knocks back targets by 2 tiles",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Emerald Tempest\n\n(Ultimate / Single Target / Debuff)",
+            "SkillImage": "/public/img/Zhaohui/image_51.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 6",
+            "SkillTypeBulletImage": "/public/img/Zhaohui/image_28.png",
+            "SkillTypeBullet": "Light Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Zhaohui/image_30.png",
+            "SkillExtraTypeBullet": "Turbid",
+            "Description": "Selects a Shadow Spike within a 9 tile radius, then selects a tile within a 2 tile radius of the selected Shadow Spike, then lands on the designated tile within a 2 tile radius, dealing Turbid damage equivalent to 160% ATK to the nearest enemy within a 6 tile radius and inflicts Stasis for 2 turns",
+            "Range": 9.0,
+            "RangeImage": "/public/img/Zhaohui/image_54.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Increases damage dealt to Stability Gauge by 2 points. Inflicts Fixed Interest on the target for 2 turns. Zhaohui can bring all allies within a 2 tiles radius while moving towards the designated tile ",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Increases CRIT DMG of this skill by 30% and increases damage dealt to 180% ATK. After skill usage, increases ATK by 10%. This can be stacked up to 3 times",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Shadow Strike\n\n(Passive / Support / Debuff)",
+            "SkillImage": "/public/img/Zhaohui/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "At the end of the action, Zhaohui can select a Shadow Spike within a 9 tile radius, then selects a tile within a 2 tile radius of the selected Shadow Spike, then lands on the designated tile, and increases Contamination Gauge by 1 point\n\nIf an ally dealt single target damage to an enemy within attack range, Zhaohui activates Action Support against the enemy afterwards, applying Dampness for 2 turns and dealing Turbid damage equivalent to 80% ATK and 2 Stability Damage to it. This effect can be triggered up to once per turn",
+            "Range": "Self",
+            "RangeImage": "/public/img/Zhaohui/image_57.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "At the start of the battle, summons a Shadow Spike near Zhaohui. Increases the number of Action Support used by 1 time. If there is at least 1 Shadow Spike on the field, increases damage dealt by 10%\n\n(By default, it will be summoned on the tile to the right of Zhaohui. If that tile is invalid, it will be summoned on the tile to the left. If it is still invalid, it will be summoned on the tile behind)",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "The range of selecting a Shadow Spike is expanded to the entire field. Increases the number of Action Support used by 1 time. Before attacking, if the target has 2 or more debuffs, increases damage dealt by 20%",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_56.png",
+                "SkillName": "Shadow Strike",
+                "Level": 2.0,
+                "Effect": "At the start of the battle, summons a Shadow Spike near Zhaohui. Increases the number of Action Support used by 1 time. If there are at least 1 Shadow Spike on the field, increases damage dealt by 10%\n\n(By default, it will be summoned on the tile to the right of Zhaohui. If that tile is invalid, it will be summoned on the tile to the left. If it is still invalid, it will be summoned on the tile behind)"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_44.png",
+                "SkillName": "Static Gale",
+                "Level": 2.0,
+                "Effect": "Increases range by 3 tiles, effect range by 1 tile, damage dealt to Stability Gauge by 1 point, and damage dealt to 110% ATK"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_51.png",
+                "SkillName": "Emerald Tempest",
+                "Level": 2.0,
+                "Effect": "Increases damage dealt to Stability Gauge by 2 points. Inflicts Fixed Interest on the target for 2 turns. Zhaohui can bring all allies within a 2 tiles radius while moving towards the designated tile"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_38.png",
+                "SkillName": "Shadow Assault",
+                "Level": 2.0,
+                "Effect": "The target no longer needs to have Turbid type debuffs to apply Stun. For each target hit, recovers Stability Gauge by 1 point. Increases CRIT rate of the next active attack by 20% instead, and for each target hit, further increases CRIT rate by 5%"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_56.png",
+                "SkillName": "Shadow Strike",
+                "Level": 3.0,
+                "Effect": "The range of selecting a Shadow Spike is expanded to the entire field. Increases the number of Action Support used by 1 time. Before attacking, if the target has 2 or more debuffs, increases damage dealt by 20%"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_51.png",
+                "SkillName": "Emerald Tempest",
+                "Level": 3.0,
+                "Effect": "Increases CRIT DMG of this skill by 30% and increases damage dealt to 180% ATK. After skill usage, increases ATK by 10%. This can be stacked up to 3 times"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_64.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +35\nDEF +21",
+                "MaterialsImage1": "/public/img/Zhaohui/image_12.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_65.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +71\nATK +5.0%",
+                "MaterialsImage1": "/public/img/Zhaohui/image_7.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_66.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +43\nDEF +29",
+                "MaterialsImage1": "/public/img/Zhaohui/image_8.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_67.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +97\nCRIT DMG +10.0%",
+                "MaterialsImage1": "/public/img/Zhaohui/image_9.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_68.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +50\nDEF +38",
+                "MaterialsImage1": "/public/img/Zhaohui/image_13.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_69.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +58\nHP +127",
+                "MaterialsImage1": "/public/img/Zhaohui/image_11.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_70.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "Increases damage dealt to targets with Turbid type debuffs by 10%",
+                "MaterialsImage1": "/public/img/Zhaohui/image_20.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_20.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_71.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "Shadow Assault: When this skill only hits 1 target, deals additional fixed damage equivalent to 10% ATK, and applies Dampness for 2 turns",
+                "MaterialsImage1": "/public/img/Zhaohui/image_21.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_21.png",
+                "MaterialsQuantity": "1\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_72.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "If there is at least 1 Shadow Spike on the field, at the end of the action, recovers HP equivalent to 10% max HP",
+                "MaterialsImage1": "/public/img/Zhaohui/image_22.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_22.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_73.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Static Gale: When this skill is used, gains 1 layer of Fast Acting Barrier, and knocks back targets by 2 tiles",
+                "MaterialsImage1": "/public/img/Zhaohui/image_23.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_23.png",
+                "MaterialsQuantity": "1\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_74.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "If Zhaohui is within a 2 tiles radius of a Shadow Spike, decreases damage dealt to Stability Gauge by 1 point, and decreases AoE damage received by 30%",
+                "MaterialsImage1": "/public/img/Zhaohui/image_24.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_24.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_75.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "Before using Action Support, dispels 2 buffs from the target",
+                "MaterialsImage1": "/public/img/Zhaohui/image_25.png",
+                "MaterialsImage2": "/public/img/Zhaohui/image_25.png",
+                "MaterialsQuantity": "2\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "/public/img/Zhaohui/image_76.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "CRIT +5.0% / At the start of the turn, increases CRIT DMG of the next active attack by 10%",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

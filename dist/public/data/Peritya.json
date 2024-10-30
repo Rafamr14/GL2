@@ -1,0 +1,365 @@
+{
+    "CharImage": "/public/img/Peritya/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_PerityaSSR.png",
+    "Name": "Peritya",
+    "Class": "Sentinel",
+    "ClassImage": "/public/img/Peritya/image_27.png",
+    "Attributes": {
+        "HP": 1948.0,
+        "ATK": 765.0,
+        "DEF": 536.0,
+        "StabilityGauge": "9 points",
+        "MovementSpeed": "5 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Heavy Type Bullet",
+        "SAtt1Image": "/public/img/Peritya/image_28.png",
+        "SAtt2": "Corrosion",
+        "SAtt2Image": "/public/img/Peritya/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Light Type Bullet",
+        "Weakness1Image": "/public/img/Peritya/image_29.png",
+        "Weakness2": "Turbid",
+        "Weakness2Image": "/public/img/Peritya/image_31.png"
+    },
+    "Effects": {
+        "Full": "Action Support: This is considered as a Support attack. Attacks once. Cannot be triggered by Support attacks\n\nMovement Increase II: Increases movement speed by 2 tiles. This is considered as a buff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Rapid Override\n\n(Basic Attack / Single Target)",
+            "SkillImage": "/public/img/Peritya/image_32.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Peritya/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Peritya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals Physical damage equivalent to 80% ATK to it",
+            "Range": 8.0,
+            "RangeImage": "/public/img/Peritya/image_37.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Fixed Erosion\n\n(Skill / AoE / Dispel)",
+            "SkillImage": "/public/img/Peritya/image_38.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 2 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Peritya/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Peritya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 8 tile radius and deals AoE Corrosion damage equivalent to 85% ATK to it and all enemies in a 3x3 range, and dispels 1 buff",
+            "Range": 8.0,
+            "RangeImage": "/public/img/Peritya/image_41.png",
+            "Effect": "3x3",
+            "Vertebrae 1": "Dispels 1 → 2 buffs",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "Fixed Erosion: Increases damage dealt to Stability Gauge for the main target by 4 points",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Domain Suppression\n\n(Skill / AoE / Displacement)",
+            "SkillImage": "/public/img/Peritya/image_44.png",
+            "Att1": "Stability Damage: 3",
+            "Att2": "Cooldown: 3 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Peritya/image_28.png",
+            "SkillTypeBullet": null,
+            "SkillExtraTypeBulletImage": "/public/img/Peritya/image_30.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects 1 tile within a 8 tile radius, and deals AoE Physical damage equivalent to 90% ATK to all enemies within a 1 tile radius, and pulls them towards the center by 1 tile. For each enemy hit, decreases cooldown of this skill by 1 turn",
+            "Range": 8.0,
+            "RangeImage": "/public/img/Peritya/image_45.png",
+            "Effect": 1.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Extends the effective range by 1 tile",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "Domain Suppression: Increases damage dealt by 15% towards displacement immune enemies",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Multiple Compilation\n\n(Ultimate / AoE)",
+            "SkillImage": "/public/img/Peritya/image_51.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 6",
+            "SkillTypeBulletImage": "/public/img/Peritya/image_28.png",
+            "SkillTypeBullet": "Heavy Type Bullet",
+            "SkillExtraTypeBulletImage": "/public/img/Peritya/image_30.png",
+            "SkillExtraTypeBullet": "Corrosion",
+            "Description": "Deals AoE Corrosion damage equivalent to 100% ATK to all enemies within a 5x5 to 9x9 tile radius; for each enemy hit, increases the damage of this skill by 5%, up to a maximum of 15%",
+            "Range": "Self",
+            "RangeImage": "/public/img/Peritya/image_54.png",
+            "Effect": "9x9",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "For each enemy hit, increases the damage of this skill by 5%, up to a maximum of 15 → 25%        ",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "Extends the effective range to 3x3 to 9x9 tile radius",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Chain Reaction\n\n(Passive / Support)",
+            "SkillImage": "/public/img/Peritya/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "If an ally dealt AoE damage to an enemy within attack range, Peritya activates Action Support against the enemy afterwards, dealing AoE Physical damage equivalent to 50% ATK and 1 Stability Damage to it, and increases Contamination Gauge by 1 point for self. This effect can be triggered up to 6 times per turn. \n\nBefore attacking, for each point of remaining movement points remaining, increases damage dealt by this attack by 10%, up to a maximum of 30%",
+            "Range": "Self",
+            "RangeImage": "/public/img/Peritya/image_57.png",
+            "Effect": "Target",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "If Peritya did not move before attacking, increases Contamination Gauge by 2 points after attack",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "Action Support can be triggered up to 6 → 10 time per turn",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "/public/img/Peritya/image_38.png",
+                "SkillName": "Fixed Erosion",
+                "Level": 2.0,
+                "Effect": "Dispels 1 → 2 buffs"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Peritya/image_44.png",
+                "SkillName": "Domain Suppression",
+                "Level": 2.0,
+                "Effect": "Extends the effective range by 1 tile"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Peritya/image_51.png",
+                "SkillName": "Multiple Compilation",
+                "Level": 2.0,
+                "Effect": "For each enemy hit, increases the damage of this skill by 5%, up to a maximum of 15 → 25%        "
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Peritya/image_51.png",
+                "SkillName": "Multiple Compilation",
+                "Level": 3.0,
+                "Effect": "Extends the effective range to 3x3 to 9x9 tile radius"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Peritya/image_56.png",
+                "SkillName": "Chain Reaction",
+                "Level": 2.0,
+                "Effect": "If Peritya did not move before attacking, increases Contamination Gauge by 2 points after attack"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Peritya/image_56.png",
+                "SkillName": "Chain Reaction",
+                "Level": 3.0,
+                "Effect": "Action Support can be triggered up to 6 → 10 time per turn"
+            }
+        ]
+    },
+    "Enhancements": {
+        "1": [
+            {
+                "IconImage": "/public/img/Peritya/image_64.png",
+                "Enhancement 1": "Enhancement 1",
+                "Level": 1.0,
+                "Effect": "ATK +36\nDEF +23",
+                "MaterialsImage1": "/public/img/Peritya/image_12.png",
+                "MaterialsImage2": "/public/img/Peritya/image_12.png",
+                "MaterialsQuantity": "20\n\n\n1000"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Peritya/image_65.png",
+                "Enhancement 1": "Enhancement 2",
+                "Level": 20.0,
+                "Effect": "HP +82\nATK +5.0%",
+                "MaterialsImage1": "/public/img/Peritya/image_7.png",
+                "MaterialsImage2": "/public/img/Peritya/image_7.png",
+                "MaterialsQuantity": "20\n\n\n2000"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Peritya/image_66.png",
+                "Enhancement 1": "Enhancement 3",
+                "Level": 25.0,
+                "Effect": "ATK +43\nDEF +31",
+                "MaterialsImage1": "/public/img/Peritya/image_8.png",
+                "MaterialsImage2": "/public/img/Peritya/image_8.png",
+                "MaterialsQuantity": "40\n\n\n4000"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Peritya/image_67.png",
+                "Enhancement 1": "Enhancement 4",
+                "Level": 30.0,
+                "Effect": "HP +113\nATK +5.0%",
+                "MaterialsImage1": "/public/img/Peritya/image_9.png",
+                "MaterialsImage2": "/public/img/Peritya/image_9.png",
+                "MaterialsQuantity": "80\n\n\n8000"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Peritya/image_68.png",
+                "Enhancement 1": "Enhancement 5",
+                "Level": 35.0,
+                "Effect": "ATK +51\nDEF +41",
+                "MaterialsImage1": "/public/img/Peritya/image_13.png",
+                "MaterialsImage2": "/public/img/Peritya/image_13.png",
+                "MaterialsQuantity": "120\n\n\n10000"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Peritya/image_69.png",
+                "Enhancement 1": "Enhancement 6",
+                "Level": 40.0,
+                "Effect": "ATK +58\nHP +147",
+                "MaterialsImage1": "/public/img/Peritya/image_11.png",
+                "MaterialsImage2": "/public/img/Peritya/image_11.png",
+                "MaterialsQuantity": "160\n\n\n12000"
+            }
+        ],
+        "7": [
+            {
+                "IconImage": "/public/img/Peritya/image_70.png",
+                "Enhancement 1": "Fixed Key 1",
+                "Level": 20.0,
+                "Effect": "For every 10 points of damage caused to Stability Gauge, increases Contamination Gauge by 1 point",
+                "MaterialsImage1": "/public/img/Peritya/image_20.png",
+                "MaterialsImage2": "/public/img/Peritya/image_20.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "8": [
+            {
+                "IconImage": "/public/img/Peritya/image_71.png",
+                "Enhancement 1": "Fixed Key 2",
+                "Level": 20.0,
+                "Effect": "If there are still remaining movement points before attacking, gains Movement Increase II for 1 turn at the end of the action",
+                "MaterialsImage1": "/public/img/Peritya/image_21.png",
+                "MaterialsImage2": "/public/img/Peritya/image_21.png",
+                "MaterialsQuantity": "3\n\n\n3000"
+            }
+        ],
+        "9": [
+            {
+                "IconImage": "/public/img/Peritya/image_72.png",
+                "Enhancement 1": "Fixed Key 3",
+                "Level": 30.0,
+                "Effect": "If Peritya did not move before attacking, cleanses 2 debuffs from self",
+                "MaterialsImage1": "/public/img/Peritya/image_22.png",
+                "MaterialsImage2": "/public/img/Peritya/image_22.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "10": [
+            {
+                "IconImage": "/public/img/Peritya/image_73.png",
+                "Enhancement 1": "Fixed Key 4",
+                "Level": 30.0,
+                "Effect": "Domain Suppression: Increases damage dealt by 15% towards displacement immune enemies",
+                "MaterialsImage1": "/public/img/Peritya/image_23.png",
+                "MaterialsImage2": "/public/img/Peritya/image_23.png",
+                "MaterialsQuantity": "3\n\n\n8000"
+            }
+        ],
+        "11": [
+            {
+                "IconImage": "/public/img/Peritya/image_74.png",
+                "Enhancement 1": "Fixed Key 5",
+                "Level": 40.0,
+                "Effect": "At the start of the battle, increases Contamination Gauge by 3 points",
+                "MaterialsImage1": "/public/img/Peritya/image_24.png",
+                "MaterialsImage2": "/public/img/Peritya/image_24.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "12": [
+            {
+                "IconImage": "/public/img/Peritya/image_75.png",
+                "Enhancement 1": "Fixed Key 6",
+                "Level": 40.0,
+                "Effect": "Fixed Erosion: Increases damage dealt to Stability Gauge for the main target by 4 points",
+                "MaterialsImage1": "/public/img/Peritya/image_25.png",
+                "MaterialsImage2": "/public/img/Peritya/image_25.png",
+                "MaterialsQuantity": "3\n\n\n12000"
+            }
+        ],
+        "13": [
+            {
+                "IconImage": "/public/img/Peritya/image_76.png",
+                "Enhancement 1": "Common Key",
+                "Level": 40.0,
+                "Effect": "CRIT +5.0% / If a skill hits 2 or more enemy targets, increases damage dealt by 7%",
+                "MaterialsImage1": null,
+                "MaterialsImage2": null,
+                "MaterialsQuantity": "None"
+            }
+        ]
+    }
+}

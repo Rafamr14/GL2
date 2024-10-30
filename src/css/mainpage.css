@@ -1,0 +1,208 @@
+/* Estilos Generales */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    background-color: #1c1f24 !important;
+    color: #e0e0e0 !important;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #97480b;
+    padding: 20px;
+    border-right: 1px solid #dee2e6;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.sidebar h3 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.sidebar a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+.sidebar a:hover {
+    color: #007bff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #97480b;
+    padding: 0;
+}
+.nav-link, .navbar-brand {
+    color: white !important;
+}
+.logo {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1; /* Permite que el main-content ocupe el espacio disponible */
+    margin-left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+@media (min-width: 769px) {
+    .main-content {
+        margin-left: 250px; /* Espacio para la sidebar */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #97480b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+@media (min-width: 769px) {
+    footer {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
+}
+@media (max-width: 768px) {
+    footer {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* Evitar desbordamiento horizontal en el contenido del footer */
+footer > * {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+
+/* Contenedores de Imagen */
+.image-container {
+    width: 573px;
+    height: 963px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+.image-containerMV {
+    width: 118px;
+    height: 734px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+.character-img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+}
+.character-imgMV {
+    max-width: 118px;
+    max-height: 734px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Tipografía */
+h1, h3, h4 {
+    color: #ffffff;
+}
+
+/* Tarjetas y Componentes */
+.card-header {
+    background-color: #3a3d45;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.row.g-4 {
+    gap: 2rem;
+}
+.card {
+    margin-bottom: 20px;
+}
+#character-sectionMV {
+    display: none;
+}
+
+/* Botones Personalizados */
+.btn-custom {
+    background-color: #2c3036;
+    color: #e0e0e0;
+    border: 2px solid #3a3d45;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 10px;
+}
+.btn-custom:hover {
+    background-color: #444950;
+    color: #ffffff;
+    border-color: #444950;
+}
+
+/* Contenedores y Componentes Adicionales */
+#countdown h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#timer h3 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+#timer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+/* Otras Imágenes */
+.skill-img {
+    margin-right: 0.5rem;
+    width: 64px;
+    height: 64px;
+}
+#class-image-idMV, #class-image-id {
+    width: 64px;
+    height: 64px;
+}
+.upgrade-icon {
+    width: 48px;
+    height: 48px;
+}
+table th, table td {
+    vertical-align: middle;
+    text-align: center;
+}
+.effect-header {
+    background-color: #3a3d45;
+    color: #ffffff;
+    font-weight: bold;
+}

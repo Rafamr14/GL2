@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Characters list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/characterspage.css">
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light d-md-none">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <a class="navbar-brand" href="#"><img class="logo" src="public/img/Logo_US.png" alt="Logo"></a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarHamburger" aria-controls="navbarHamburger" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarHamburger">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Characters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./banners_cn.html">Banners</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="sidebar d-none d-md-block">
+    <h3><img class="logo" src="public/img/Logo_US.png" alt="Logo"></h3>
+    <a href="./index.html">Home</a>
+    <a href="./Characters.html">Characters</a>
+    <a href="./banners_cn.html">Banners</a>
+</div>
+
+<div class="content-container">
+    <h1>Character list</h1>
+
+    <div class="filter-bar d-flex flex-wrap align-items-center">
+        <div class="btn-group me-3 mb-3" role="group" aria-label="Rarity Filter">
+            <button type="button" class="btn btn-outline-light active" data-rarity="all">All</button>
+            <button type="button" class="btn btn-outline-light rankA" data-rarity="SR">SR</button>
+            <button type="button" class="btn btn-outline-light rankS" data-rarity="SSR">SSR</button>
+        </div>
+
+        <div class="me-3 mb-3">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3">
+                    <label for="filterWeapon" class="form-label">Weapon</label>
+                </div>
+                <div class="col-12 col-md-6">
+                    <select id="filterWeapon" class="form-select">
+                        <option value="all">All</option>
+                        <option value="Assault Rifle">Assault Rifle</option>
+                        <option value="Handgun">Handgun</option>
+                        <option value="LMG">LMG</option>
+                        <option value="Shotgun">Shotgun</option>
+                        <option value="SMG">SMG</option>
+                        <option value="Sniper Rifle">Sniper Rifle</option>
+                        <option value="Sword">Sword</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-group" role="group" aria-label="Class Filter">
+            <button type="button" class="btn btn-outline-light active" data-class="all">
+                All
+            </button>
+            <button type="button" class="btn btn-outline-light" data-class="Bulwark">
+                <img class="class-image" src="public/img/icons/Bulwark.png" alt="Bulwark">
+            </button>
+            <button type="button" class="btn btn-outline-light" data-class="Sentinel">
+                <img class="class-image" src="public/img/icons/Sentinel.png" alt="Sentinel">
+            </button>
+            <button type="button" class="btn btn-outline-light" data-class="Support">
+                <img class="class-image" src="public/img/icons/Support.png" alt="Support">
+            </button>
+            <button type="button" class="btn btn-outline-light" data-class="Vanguard">
+                <img class="class-image" src="public/img/icons/Vanguard.png" alt="Vanguard">
+            </button>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="support">
+            <a href="./characters/Centaureissi.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_CentaureissiSSR.png" alt="Centaureissi">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Centaureissi</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Sword" data-class="vanguard">
+            <a href="./characters/Krolik.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_CharolicSR.png" alt="Charolic">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Charolic</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="SMG" data-class="support">
+            <a href="./characters/Cheeta.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_CheetaSR.png" alt="Cheeta">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Cheeta</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="sentinel">
+            <a href="./characters/Klukai.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_ClukaySSR.png" alt="Clukay">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Clukay</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Handgun" data-class="support">
+            <a href="./characters/Colphne.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_ColphneSR.png" alt="Colphne">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Colphne</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="sentinel">
+            <a href="./characters/Daiyan.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_DaiyanSSR.png" alt="Daiyan">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Daiyan</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Sniper Rifle" data-class="support">
+            <a href="./characters/Dushevnaya.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_DusevnyjSSR.png" alt="Dushevnaya">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Dushevnaya</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Assault Rifle" data-class="bulwark">
+            <a href="./characters/Groza.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_GrozaSR.png" alt="Groza">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Groza</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="sentinel">
+            <a href="./characters/Jiangyu.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_JiangyuSSR.png" alt="Jiangyu">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Jiangyu</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Handgun" data-class="support">
+            <a href="./characters/Ksenia.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_KseniaSR.png" alt="Ksenia">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Ksenia</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="SMG" data-class="support">
+            <a href="./characters/Lenna.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_LennaSSR.png" alt="Lenna">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Lenna</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="LMG" data-class="sentinel">
+            <a href="./characters/Littara.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_LittaraSR.png" alt="Littara">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Littara</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Shotgun" data-class="sentinel">
+            <a href="./characters/Lotta.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_LottaSR.png" alt="Lotta">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Lotta</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Sniper Rifle" data-class="sentinel">
+            <a href="./characters/Macchiato.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_MacqiatoSSR.png" alt="Macchiato">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Macchiato</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="support">
+            <a href="./characters/Mechty.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_MishtySSR.png" alt="Mechty">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Mechty</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Sniper Rifle" data-class="sentinel">
+            <a href="./characters/Mosin%20Nagant.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_MosinnagantSSR.png" alt="Mosin Nagant">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Mosin Nagant</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Handgun" data-class="support">
+            <a href="./characters/Nagant.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_NagantSR.png" alt="Nagant">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Nagant</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Sniper Rifle" data-class="sentinel">
+            <a href="./characters/Nemesis.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_NemesisSR.png" alt="Nemesis">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Nemesis</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="SMG" data-class="sentinel">
+            <a href="./characters/Papasha.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_PapashaSSR.png" alt="Papasha">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Papasha</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="LMG" data-class="sentinel">
+            <a href="./characters/Peritya.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_PerityaSSR.png" alt="Peritya">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Peritya</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="sentinel">
+            <a href="./characters/Qiongjiu.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_QiongjiuSSR.png" alt="Qiongjiu">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Qiongjiu</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Shotgun" data-class="bulwark">
+            <a href="./characters/Sabrina.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_SabrinaSSR.png" alt="Sabrina">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Sabrina</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SR" data-weapon="Assault Rifle" data-class="sentinel">
+            <a href="./characters/Sharkry.html">
+                <div class="rankA">
+                    <img src="public/img/Avatar_Half_SharkrySR.png" alt="Sharkry">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Sharkry</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="SMG" data-class="support">
+            <a href="./characters/Suomi.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_SuomiSSR.png" alt="Suomi">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Suomi</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Assault Rifle" data-class="sentinel">
+            <a href="./characters/Tololo.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_TololoSSR.png" alt="Tololo">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Tololo</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Sword" data-class="vanguard">
+            <a href="./characters/Ullrid.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_UllridSSR.png" alt="Ullrid">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Ullrid</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="Shotgun" data-class="vanguard">
+            <a href="./characters/Vepley.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_VepleySSR.png" alt="Vepley">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Vepley</p>
+                </div>
+            </a>
+        </div>
+        <div class="character-card" data-rarity="SSR" data-weapon="SMG" data-class="vanguard">
+            <a href="./characters/Zhaohui.html">
+                <div class="rankS">
+                    <img src="public/img/Avatar_Half_ZhaohuiSSR.png" alt="Zhaohui">
+                </div>
+                <div class="d-flex justify-content-center rounded-bottom name-container">
+                    <p>Zhaohui</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="./js/bootstrap.js"></script>
+<script type="module" src="js/characterslist.js"></script>
+</body>
+</html>

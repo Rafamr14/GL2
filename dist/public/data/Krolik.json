@@ -1,0 +1,367 @@
+{
+    "CharImage": "/public/img/Krolik/image_26.png",
+    "CharPortrait": "/public/img/Avatar_Whole_CharolicSR.png",
+    "Name": "Krolik",
+    "Class": "Vanguard",
+    "ClassImage": "/public/img/Krolik/image_27.png",
+    "Attributes": {
+        "HP": 1932.0,
+        "ATK": 519.0,
+        "DEF": 802.0,
+        "StabilityGauge": "8 points",
+        "MovementSpeed": "9 tiles"
+    },
+    "SkillAttribute": {
+        "SAtt1": "Melee",
+        "SAtt1Image": "/public/img/Krolik/image_28.png",
+        "SAtt2": "Burn",
+        "SAtt2Image": "/public/img/Krolik/image_30.png"
+    },
+    "Weakness": {
+        "Weakness1": "Shotgun",
+        "Weakness1Image": "/public/img/Krolik/image_29.png",
+        "Weakness2": "Corrosion",
+        "Weakness2Image": "/public/img/Krolik/image_31.png"
+    },
+    "Effects": {
+        "Full": "Extra Movement: Can move once, but is unable to execute any commands\n\nOverflowing Flame: When gaining this effect and after the end of an action, this unit and all friendly units within a 1 tile radius receives fixed damage equivalent to 10% of the holder's ATK. This is considered as a Burn type debuff\n\nFlame Assault II: Increases ATK by 15%. This is considered as a Burn type buff\n\nSolidification: Decreases Movement Speed by 1 tile; at the end of the action, if the holder has 2 layers of Solidification, it is converted into Chill, which lasts for 1 turn. Solidification can be stacked up to 2 layers. This is considered as a Ice type debuff\n\nChill: Cannot move or be displaced. This is considered as a Ice type debuff"
+    },
+    "Basic": [
+        {
+            "SkillName": "Instantaneous Slash\n\n(Basic Attack / Single Target / Melee)",
+            "SkillImage": "/public/img/Krolik/image_32.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Krolik/image_52.png",
+            "SkillTypeBullet": "Melee",
+            "SkillExtraTypeBulletImage": "/public/img/Krolik/image_53.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 1 tile radius and deals melee Physical damage equivalent to 80% ATK",
+            "Range": 1.0,
+            "RangeImage": "/public/img/Krolik/image_37.png",
+            "Effect": "Enemy",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill": [
+        {
+            "SkillName": "Crushing Revolution\n\n(Skill / AoE / Melee)",
+            "SkillImage": "/public/img/Krolik/image_38.png",
+            "Att1": "Stability Damage: 1",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Krolik/image_52.png",
+            "SkillTypeBullet": "Melee",
+            "SkillExtraTypeBulletImage": "/public/img/Krolik/image_53.png",
+            "SkillExtraTypeBullet": null,
+            "Description": "Selects an enemy target within a 1 tile radius and deals melee AoE Physical damage equivalent to 120% ATK to all enemies within a 3x3 tile range of the target, and increases Contamination Gauge by 1 point. If there are no ally within a 3 tile radius of self after attacking, gains 5 tiles of Extra Movement                \n                \n                ",
+            "Range": 1.0,
+            "RangeImage": "/public/img/Krolik/image_40.png",
+            "Effect": "3x3",
+            "Vertebrae 1": "If the target is in Stability Break, ignores 30% of the target's DEF",
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": "If Crushing Revolution hits only one enemy, increases damage dealt by 30%",
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Skill2": [
+        {
+            "SkillName": "Quenching Slash\n\n(Skill / Single Target / Melee / Debuff)",
+            "SkillImage": "/public/img/Krolik/image_43.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 3 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "SkillTypeBulletImage": "/public/img/Krolik/image_52.png",
+            "SkillTypeBullet": "Melee",
+            "SkillExtraTypeBulletImage": "/public/img/Krolik/image_53.png",
+            "SkillExtraTypeBullet": "Burn",
+            "Description": "Selects an enemy target within a 1 tile radius, applies Overflowing Flame for 2 turns, deals melee Burn damage equivalent to 150% ATK to it, and increases Contamination Gauge by 2 points; returns back to the position before action after attack                \n                \n                ",
+            "Range": 1.0,
+            "RangeImage": "/public/img/Krolik/image_46.png",
+            "Effect": "Enemy",
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "Deals Burn damage equivalent to 150% \u2192 160% ATK",
+            "Vertebrae 4": null,
+            "Vertebrae 5": null,
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": "If Quenching Slash kills the enemy, decreases cooldown by 2 turns",
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Ultimate": [
+        {
+            "SkillName": "Slaughter Sequence\n\n(Ultimate / Single Target / Melee / Extra Movement)",
+            "SkillImage": "/public/img/Krolik/image_51.png",
+            "Att1": "Stability Damage: 2",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 4",
+            "SkillTypeBulletImage": "/public/img/Krolik/image_52.png",
+            "SkillTypeBullet": "Melee",
+            "SkillExtraTypeBulletImage": "/public/img/Krolik/image_53.png",
+            "SkillExtraTypeBullet": "Burn",
+            "Description": "Selects 1 direction, and charges 7 tiles forward in that direction, dealing melee Burn damage equivalent to 130% ATK to the first enemy target in her way; if that enemy has Overflowing Flame, ignores damage reduction gained from Cover, and gains 4 tiles of Extra Movement after charging",
+            "Range": 1.0,
+            "RangeImage": "/public/img/Krolik/image_54.png",
+            "Effect": 7.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": "If an enemy is killed, increases Contamination Gauge by 2 points",
+            "Vertebrae 4": null,
+            "Vertebrae 5": "If the target has Overflowing Flame, increases CRIT rate by 100%",
+            "Vertebrae 6": null,
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Passive": [
+        {
+            "SkillName": "Embers\n\n(Passive / Debuff)",
+            "SkillImage": "/public/img/Krolik/image_56.png",
+            "Att1": "Stability Damage: 0",
+            "Att2": "Cooldown: 0 turns",
+            "Att3": "Contamination Gauge Consumption: 0",
+            "Description": "When attacking enemy targets with Overflowing Flame, increases damage dealt by 15%; after taking action, inflicts Overflowing Flame on the 2 closest enemy targets within a 5 tile radius for 2 turns",
+            "Range": "Self",
+            "RangeImage": "/public/img/Krolik/image_57.png",
+            "Effect": 5.0,
+            "Vertebrae 1": null,
+            "Vertebrae 2": null,
+            "Vertebrae 3": null,
+            "Vertebrae 4": "Range increases by 2 tiles",
+            "Vertebrae 5": null,
+            "Vertebrae 6": "When attacking enemy targets with Overflowing Flame, increases CRIT rate by 20%",
+            "Fixed Key 1": null,
+            "Fixed Key 2": null,
+            "Fixed Key 3": null,
+            "Fixed Key 4": null,
+            "Fixed Key 5": null,
+            "Fixed Key 6": null
+        }
+    ],
+    "Upgrades": {
+        "1": [
+            {
+                "IconImage": "/public/img/Krolik/image_38.png",
+                "SkillName": "Crushing Revolution",
+                "Level": 2.0,
+                "Effect": "If the target is in Stability Break, ignores 30% of the target's DEF"
+            }
+        ],
+        "2": [
+            {
+                "IconImage": "/public/img/Krolik/image_43.png",
+                "SkillName": "Quenching Slash",
+                "Level": 2.0,
+                "Effect": "Deals Burn damage equivalent to 150% \u2192 160% ATK"
+            }
+        ],
+        "3": [
+            {
+                "IconImage": "/public/img/Krolik/image_51.png",
+                "SkillName": "Slaughter Sequence",
+                "Level": 2.0,
+                "Effect": "If an enemy is killed, increases Contamination Gauge by 2 points"
+            }
+        ],
+        "4": [
+            {
+                "IconImage": "/public/img/Krolik/image_56.png",
+                "SkillName": "Embers",
+                "Level": 2.0,
+                "Effect": "Range increases by 2 tiles"
+            }
+        ],
+        "5": [
+            {
+                "IconImage": "/public/img/Krolik/image_43.png",
+                "SkillName": "Slaughter Sequence",
+                "Level": 3.0,
+                "Effect": "If the target has Overflowing Flame, increases CRIT rate by 100%"
+            }
+        ],
+        "6": [
+            {
+                "IconImage": "/public/img/Krolik/image_56.png",
+                "SkillName": "Embers",
+                "Level": 3.0,
+                "Effect": "When attacking enemy targets with Overflowing Flame, increases CRIT rate by 20%"
+            }
+        ]
+    },
+    "Enhancements": [
+        {
+            "1": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 1",
+                    "Level": 1.0,
+                    "Effect": "ATK +29\nDEF +19",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "20\n\n\n1000"
+                }
+            ],
+            "2": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 2",
+                    "Level": 20.0,
+                    "Effect": "HP +59\nATK +5.0%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "20\n\n\n2000"
+                }
+            ],
+            "3": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 3",
+                    "Level": 25.0,
+                    "Effect": "ATK +35\nDEF +27",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "40\n\n\n4000"
+                }
+            ],
+            "4": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 4",
+                    "Level": 30.0,
+                    "Effect": "HP +81\nCRIT DMG +10.0%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "80\n\n\n8000"
+                }
+            ],
+            "5": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 5",
+                    "Level": 35.0,
+                    "Effect": "ATK +41\nDEF +35",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "120\n\n\n10000"
+                }
+            ],
+            "6": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Enhancement 6",
+                    "Level": 40.0,
+                    "Effect": "ATK +47\nHP +106",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "160\n\n\n12000"
+                }
+            ],
+            "7": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 1",
+                    "Level": 20.0,
+                    "Effect": "Decreases Contamination Gauge consumption for Slaughter Sequence by 1 point",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n3000"
+                }
+            ],
+            "8": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 2",
+                    "Level": 20.0,
+                    "Effect": "If Crushing Revolution hits only one enemy, increases damage dealt by 30%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n3000"
+                }
+            ],
+            "9": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 3",
+                    "Level": 30.0,
+                    "Effect": "If there are no ally within a 3 tile radius of self, increases damage dealt by 10%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n8000"
+                }
+            ],
+            "10": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 4",
+                    "Level": 30.0,
+                    "Effect": "If Quenching Slash kills the enemy, decreases cooldown by 2 turns",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "1\n\n\n8000"
+                }
+            ],
+            "11": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 5",
+                    "Level": 40.0,
+                    "Effect": "At the start of Krolik's action, if there are enemies with Overflowing Flame, gains Flame Assault II for 2 turns",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "2\n\n\n12000"
+                }
+            ],
+            "12": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Fixed Key 6",
+                    "Level": 40.0,
+                    "Effect": "Before attacking, if Krolik has moved 3 or more tiles, increases CRIT rate by 10%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "2\n\n\n12000"
+                }
+            ],
+            "13": [
+                {
+                    "IconImage": null,
+                    "Enhancement 1": "Common Key",
+                    "Level": 40.0,
+                    "Effect": "CRIT +3.0% / If the user has Burn type buffs, she is immune to Chill and Solidification, and increases damage dealt by 5%",
+                    "MaterialsImage1": null,
+                    "MaterialsImage2": null,
+                    "MaterialsQuantity": "None"
+                }
+            ]
+        }
+    ]
+}
